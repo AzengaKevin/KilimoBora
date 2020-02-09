@@ -5,7 +5,7 @@
             <nav class="classy-navbar justify-content-between" id="famieNav">
                 <!-- Nav Brand -->
                 <a href="{{ route('home') }}" class="nav-brand">
-                    <img src="img/kilimoboralogo.jpg" alt="" height="90" width="90">
+                    <img src="/img/kilimoboralogo.jpg" alt="" height="90" width="90">
                 </a>
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
@@ -32,12 +32,12 @@
                         </ul>
                         <!-- Search Icon -->
                         <div id="searchIcon">
-                            <i class="icon_search" aria-hidden="true"></i>
+                            <i class="fa fa-search" aria-hidden="true"></i>
                         </div>
                         <!-- Cart Icon -->
                         <div id="cartIcon">
                             <a href="#">
-                                <i class="icon_cart_alt" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                 <span class="cart-quantity">2</span>
                             </a>
                         </div>
