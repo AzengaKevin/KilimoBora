@@ -10,6 +10,9 @@ Route::get('/products', 'PagesController@products')->name('products');
 
 Route::resources([
     'categories' => 'CategoryController',
+    'posts' => 'PostController',
 ]);
 
+//Comments routes
+Route::post('posts/{post}/comments', 'CommentController@store')->name('comments.store');
 Route::view('test', 'layouts.app');

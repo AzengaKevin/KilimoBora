@@ -1,43 +1,13 @@
 @extends('layouts.app')
 
+@section('page', 'News')
+
 @section('top-header')
-    <div class="top-header-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="top-header-content d-flex align-items-center justify-content-between">
-                        <!-- Top Header Content -->
-                        <div class="top-header-meta">
-                            <p>Welcome to <span>Farmie</span>, we hope you will enjoy our products and have good
-                                experience</p>
-                        </div>
-                        <!-- Top Header Content -->
-                        <div class="top-header-meta text-right">
-                            <a href="#" data-toggle="tooltip" data-placement="bottom"
-                               title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <span>Email: infodeercreative@gmail.com</span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i
-                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +84 223 9000</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('partials.top-header')
 @endsection
 
 @section('content')
-    <div class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url('img/bg-img/18.jpg');">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12">
-                    <div class="breadcrumb-text">
-                        <h2>News</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('partials.banner', ['title' => 'News'])
     <div class="famie-breadcrumb">
         <div class="container">
             <nav aria-label="breadcrumb">

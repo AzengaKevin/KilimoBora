@@ -1,6 +1,7 @@
 <footer class="footer-area">
     <!-- Main Footer Area -->
-    <div class="main-footer bg-img bg-overlay section-padding-80-0" style="background-image: url(img/bg-img/3.jpg);">
+    <div class="main-footer bg-img bg-overlay section-padding-80-0"
+         style="background-image: url({{ asset('/img/bg-img/3.jpg') }});">
         <div class="container">
             <div class="row">
 
