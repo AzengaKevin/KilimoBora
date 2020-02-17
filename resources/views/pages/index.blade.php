@@ -58,20 +58,24 @@
                         <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="100ms">
                             <h6>Post on <a href="#" class="post-date">18 Aug 2018</a> / <a href="#" class="post-author">Peter
                                     Crough</a></h6>
-                            <a href="#" class="post-title">Rising cattle supplies see beef export lifted</a>
+                            <a href="#" class="post-title">
+                                World Food day celebrations
+                                & exhibitions at ACC grounds
+                            </a>
                             <div class="row">
                                 <div class="col-6">
-                                    <img src="img/bg-img/26.jpg" alt="" class="post-thumb">
+                                    <img src="img/4.jpeg" alt="" class="post-thumb">
                                 </div>
                                 <div class="col-6">
                                     <p class="post-excerpt">
-                                        Nunc aliquet, justo non commodo conguet, denim, action bibendum purus selecao
-                                        samuel
-                                        eget libero. Maecenas ac viverra enim, et laoreet lacus. Etiam nisi diam,
-                                        sagittis
-                                        quam at...
+                                        The theme "Change the future of migration.
+                                        Invest in food security and rural development"
+                                        underlined the need to address root causes of migration such as poverty,
+                                        food insecurity, inequality, unemployment and a lack of social safety nets....
                                     </p>
+                                    <a href="#" class="post-title">
                                     <h5 style="margin-top: 5px;">Featured events...</h5>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -90,14 +94,13 @@
                                                 <h2><span>Let Us</span> Tell You Our Story</h2>
                                                 <img src="img/core-img/decor.png" alt="">
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetu adipiscing elit. Etiam nunc elit,
-                                                pretium atlanta urna veloci, fermentum malesuda mina. Donec auctor
-                                                nislec
-                                                neque sagittis, sit amet dapibus pellentesque donal feugiat. Nulla
-                                                mollis
-                                                magna non
-                                                sanaliquet, volutpat do zutum, ultrices consectetur, ultrices at
-                                                purus.</p>
+                                            <p>
+                                                Kilimo Bora Private Partnership is a community based organization with an
+                                                aim of supporting each other (members) through information sharing, to
+                                                increase productivity and marketing along various value chains of horticulture, poultry and
+                                                dairy. The power of information sharing Through interactions on social media,
+                                                and especially Osho Farmers WhatsApp based in Uganda motivated us in the formation of a community based organization ...
+                                            </p>
                                             <a href="#" class="btn famie-btn mt-30">Read More</a>
                                         </div>
                                     </div>
@@ -142,11 +145,11 @@
                             <h5 class="widget-title">Events</h5>
                             <!-- Cata List -->
                             <ul class="cata-list">
-                                <li><a href="#">Recipe Collections</a></li>
-                                <li><a href="#">The advantage of knowledge</a></li>
-                                <li><a href="#">Organic Farming</a></li>
+                                <li><a href="#">World Food day celebrations and exhibitions</a></li>
+                                <li><a href="#">Members meeting at Nyamusi ACC office</a></li>
+                                <li><a href="#">Kisii ASK Show</a></li>
                                 <li><a href="#">Farming &amp; Agricultural</a></li>
-                                <li><a href="#">Special Diet</a></li>
+                                <li><a href="#">Nyamira County avocado launch</a></li>
                                 <li><a href="#">How to Manage Soil Fertility</a></li>
                             </ul>
                         </div>
@@ -159,12 +162,26 @@
                             <!-- Single Recent News Start -->
                             <div class="single-recent-blog style-2 d-flex align-items-center">
                                 <div class="post-thumbnail">
-                                    <img src="img/bg-img/30.jpg" alt="">
+                                    <img src="img/5.jpeg" alt="" >
                                 </div>
                                 <div class="post-content">
-                                    <a href="#" class="post-title">US milk production continues its upward trajectory
-                                        for
-                                        2018</a>
+                                    <a href="#" class="post-title">
+                                        KBCBO participation at Kisii ASK Show courtesy of World Vision Kenya
+                                        in 2019.
+                                        </a>
+                                    <div class="post-date">18 Aug 2019</div>
+                                </div>
+                            </div>
+
+                            <!-- Single Recent News Start -->
+                            <div class="single-recent-blog style-2 d-flex align-items-center">
+                                <div class="post-thumbnail">
+                                    <img src="img/10.jpeg" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <a href="#" class="post-title">
+                                        Vertical bags farming technology demonstrations
+                                    </a>
                                     <div class="post-date">18 Aug 2018</div>
                                 </div>
                             </div>
@@ -172,37 +189,28 @@
                             <!-- Single Recent News Start -->
                             <div class="single-recent-blog style-2 d-flex align-items-center">
                                 <div class="post-thumbnail">
-                                    <img src="img/bg-img/31.jpg" alt="">
+                                    <img src="img/11.jpeg" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <a href="#" class="post-title">USDA'S crop ratings more ahead for corn, drop for
-                                        soybeans</a>
-                                    <div class="post-date">18 Aug 2018</div>
+                                    <a href="#" class="post-title">
+                                        KBCBO participation at Kisii ASK Show courtesy of World Vision Kenya
+                                        in 2019.
+                                    </a>
+                                    <div class="post-date">6 Feb 2019</div>
                                 </div>
                             </div>
 
                             <!-- Single Recent News Start -->
                             <div class="single-recent-blog style-2 d-flex align-items-center">
                                 <div class="post-thumbnail">
-                                    <img src="img/bg-img/32.jpg" alt="">
+                                    <img src="img/15.jpeg" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <a href="#" class="post-title">Auction report: Bids aplenty for massive John Deere
-                                        collection</a>
-                                    <div class="post-date">18 Aug 2018</div>
-                                </div>
-                            </div>
-
-                            <!-- Single Recent News Start -->
-                            <div class="single-recent-blog style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/33.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="#" class="post-title">Wool prices expected to remain competitive as demand
-                                        is
-                                        grow</a>
-                                    <div class="post-date">18 Aug 2018</div>
+                                    <a href="#" class="post-title">
+                                        KBCBO started as Kilimo Bora Public Private Partnerships group on
+                                        WhatsApp in 20/2/2017....
+                                    </a>
+                                    <div class="post-date">25 Feb 2017</div>
                                 </div>
                             </div>
                         </div>
@@ -214,13 +222,13 @@
                             <!-- Tags -->
                             <ul class="famie-tags">
                                 <li><a href="#">All product</a></li>
-                                <li><a href="#">Freshy Fruit</a></li>
-                                <li><a href="#">Sweet Corn</a></li>
-                                <li><a href="#">Chicken</a></li>
+                                <li><a href="#">Fertilizers</a></li>
+                                <li><a href="#">Crop rotation</a></li>
+                                <li><a href="#">Contact us</a></li>
                                 <li><a href="#">Organic</a></li>
                                 <li><a href="#">Farm Practices</a></li>
                                 <li><a href="#">Meat</a></li>
-                                <li><a href="#">Special Recipe</a></li>
+                                <li><a href="#">Stakeholders</a></li>
                             </ul>
                         </div>
 
@@ -247,10 +255,13 @@
                             <h2><span>Let Us</span> Tell You Our Story</h2>
                             <img src="img/core-img/decor.png" alt="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetu adipiscing elit. Etiam nunc elit, pretium atlanta urna
-                            veloci, fermentum malesuda mina. Donec auctor nislec neque sagittis, sit amet dapibus
-                            pellentesque donal feugiat. Nulla mollis magna non
-                            sanaliquet, volutpat do zutum, ultrices consectetur, ultrices at purus.</p>
+                        <p>
+                            Kilimo Bora Private Partnership is a community based organization with an
+                            aim of supporting each other (members) through information sharing, to
+                            increase productivity and marketing along various value chains of horticulture, poultry and
+                            dairy. The power of information sharing Through interactions on social media,
+                            and especially Osho Farmers WhatsApp based in Uganda motivated us in the formation of a community based organization ...
+                        </p>
                         <a href="#" class="btn famie-btn mt-30">Read More</a>
                     </div>
                 </div>
@@ -536,8 +547,9 @@
                 <div class="col-lg-6">
                     <div class="contact-maps mb-100">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28313.28917392649!2d-88.2740948914384!3d41.76219337461615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880efa1199df6109%3A0x8a1293b2ae8e0497!2sE+New+York+St%2C+Aurora%2C+IL%2C+USA!5e0!3m2!1sen!2sbd!4v1542893000723"
-                            allowfullscreen></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.768574361703!2d34.78213395567447!3d-0.6920330379248255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b3eb0bf137c71%3A0xd106e50ebec3c697!2sKisii%20University!5e0!3m2!1sen!2ske!4v1581578180321!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+
+                        </iframe>
                     </div>
                 </div>
             </div>

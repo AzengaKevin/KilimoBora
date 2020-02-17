@@ -8,16 +8,17 @@
                     <div class="top-header-content d-flex align-items-center justify-content-between">
                         <!-- Top Header Content -->
                         <div class="top-header-meta">
-                            <p>Welcome to <span>Farmie</span>, we hope you will enjoy our products and have good
-                                experience</p>
+                            <p>
+                                Welcome to <span>Kilimo Bora CBO</span>
+                            </p>
                         </div>
                         <!-- Top Header Content -->
                         <div class="top-header-meta text-right">
                             <a href="#" data-toggle="tooltip" data-placement="bottom"
-                               title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <span>Email: infodeercreative@gmail.com</span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i
-                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +84 223 9000</span></a>
+                               title="KilimoBora@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <span>Email: KilimoBora@gmail.com</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+254712345678"><i
+                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +254712345678</span></a>
                         </div>
                     </div>
                 </div>
@@ -62,12 +63,14 @@
                         <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="100ms">
                             <h6>Post on <a href="#" class="post-date">18 Aug 2018</a> / <a href="#" class="post-author">Peter
                                     Crough</a></h6>
-                            <a href="#" class="post-title">Rising cattle supplies see beef export lifted</a>
-                            <img src="img/bg-img/26.jpg" alt="" class="post-thumb">
+                            <a href="#" class="post-title">World Food day celebrations
+                                & exhibitions at ACC grounds</a>
+                            <img src="img/9.jpeg" alt="" class="post-thumb">
                             <p class="post-excerpt">
-                                Nunc aliquet, justo non commodo conguet, denim, action bibendum purus selecao samuel
-                                eget
-                                libero. Maecenas ac viverra enim, et laoreet lacus. Etiam nisi diam, sagittis quam at...
+                                KBCBO group Admin and leader of the marketing sub-committee Mr
+                                Ibrahim Nyamweya Ondieki during Nyamira County avocado launch at
+                                Nyamaiya in 2019 take Dignitaries through KBCBO/ KBPPP digital
+                                Extension and marketing services on WhatsApp walls.
                             </p>
                         </div>
 
@@ -75,13 +78,15 @@
                         <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="300ms">
                             <h6>Post on <a href="#" class="post-date">18 Aug 2018</a> / <a href="#" class="post-author">Peter
                                     Crough</a></h6>
-                            <a href="#" class="post-title">Why innovation is key to maintaining our export market
-                                share</a>
-                            <img src="img/bg-img/27.jpg" alt="" class="post-thumb">
+                            <a href="#" class="post-title">
+                                Vertical bags farming technology demonstrations
+                            </a>
+                            <img src="img/10.jpeg" alt="" class="post-thumb">
                             <p class="post-excerpt">
-                                Nunc aliquet, justo non commodo conguet, denim, action bibendum purus selecao samuel
-                                eget
-                                libero. Maecenas ac viverra enim, et laoreet lacus. Etiam nisi diam, sagittis quam at...
+                                Former KBCBO secretary now vice chair Mr Julius Onyancha briefing
+                                the participants at southern Kenya ASK Kisii show on the
+                                Vertical bags farming technology demonstrations.
+
                             </p>
                         </div>
 
@@ -142,11 +147,11 @@
                             <h5 class="widget-title">Catagories</h5>
                             <!-- Cata List -->
                             <ul class="cata-list">
-                                <li><a href="#">Recipe Collections</a></li>
-                                <li><a href="#">The advantage of knowledge</a></li>
-                                <li><a href="#">Organic Farming</a></li>
+                                <li><a href="#">World Food day celebrations and exhibitions</a></li>
+                                <li><a href="#">Members meeting at Nyamusi ACC office</a></li>
+                                <li><a href="#">Kisii ASK Show</a></li>
                                 <li><a href="#">Farming &amp; Agricultural</a></li>
-                                <li><a href="#">Special Diet</a></li>
+                                <li><a href="#">Nyamira County avocado launch</a></li>
                                 <li><a href="#">How to Manage Soil Fertility</a></li>
                             </ul>
                         </div>
@@ -159,12 +164,26 @@
                             <!-- Single Recent News Start -->
                             <div class="single-recent-blog style-2 d-flex align-items-center">
                                 <div class="post-thumbnail">
-                                    <img src="img/bg-img/30.jpg" alt="">
+                                    <img src="img/5.jpeg" alt="" >
                                 </div>
                                 <div class="post-content">
-                                    <a href="#" class="post-title">US milk production continues its upward trajectory
-                                        for
-                                        2018</a>
+                                    <a href="#" class="post-title">
+                                        KBCBO participation at Kisii ASK Show courtesy of World Vision Kenya
+                                        in 2019.
+                                    </a>
+                                    <div class="post-date">18 Aug 2019</div>
+                                </div>
+                            </div>
+
+                            <!-- Single Recent News Start -->
+                            <div class="single-recent-blog style-2 d-flex align-items-center">
+                                <div class="post-thumbnail">
+                                    <img src="img/10.jpeg" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <a href="#" class="post-title">
+                                        Vertical bags farming technology demonstrations
+                                    </a>
                                     <div class="post-date">18 Aug 2018</div>
                                 </div>
                             </div>
@@ -172,37 +191,28 @@
                             <!-- Single Recent News Start -->
                             <div class="single-recent-blog style-2 d-flex align-items-center">
                                 <div class="post-thumbnail">
-                                    <img src="img/bg-img/31.jpg" alt="">
+                                    <img src="img/11.jpeg" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <a href="#" class="post-title">USDA'S crop ratings more ahead for corn, drop for
-                                        soybeans</a>
-                                    <div class="post-date">18 Aug 2018</div>
+                                    <a href="#" class="post-title">
+                                        KBCBO participation at Kisii ASK Show courtesy of World Vision Kenya
+                                        in 2019.
+                                    </a>
+                                    <div class="post-date">6 Feb 2019</div>
                                 </div>
                             </div>
 
                             <!-- Single Recent News Start -->
                             <div class="single-recent-blog style-2 d-flex align-items-center">
                                 <div class="post-thumbnail">
-                                    <img src="img/bg-img/32.jpg" alt="">
+                                    <img src="img/15.jpeg" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <a href="#" class="post-title">Auction report: Bids aplenty for massive John Deere
-                                        collection</a>
-                                    <div class="post-date">18 Aug 2018</div>
-                                </div>
-                            </div>
-
-                            <!-- Single Recent News Start -->
-                            <div class="single-recent-blog style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/33.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="#" class="post-title">Wool prices expected to remain competitive as demand
-                                        is
-                                        grow</a>
-                                    <div class="post-date">18 Aug 2018</div>
+                                    <a href="#" class="post-title">
+                                        KBCBO started as Kilimo Bora Public Private Partnerships group on
+                                        WhatsApp in 20/2/2017....
+                                    </a>
+                                    <div class="post-date">25 Feb 2017</div>
                                 </div>
                             </div>
                         </div>
@@ -214,82 +224,84 @@
                             <!-- Tags -->
                             <ul class="famie-tags">
                                 <li><a href="#">All product</a></li>
-                                <li><a href="#">Freshy Fruit</a></li>
-                                <li><a href="#">Sweet Corn</a></li>
-                                <li><a href="#">Chicken</a></li>
+                                <li><a href="#">Fertilizers</a></li>
+                                <li><a href="#">Crop rotation</a></li>
+                                <li><a href="#">Contact us</a></li>
                                 <li><a href="#">Organic</a></li>
                                 <li><a href="#">Farm Practices</a></li>
                                 <li><a href="#">Meat</a></li>
-                                <li><a href="#">Special Recipe</a></li>
+                                <li><a href="#">Stakeholders</a></li>
                             </ul>
                         </div>
 
                         <!-- Single Widget Area -->
-                        <div class="single-widget-area">
-                            <!-- Title -->
-                            <h5 class="widget-title">Best products</h5>
+{{--                        <div class="single-widget-area">--}}
+{{--                            <!-- Title -->--}}
+{{--                            <h5 class="widget-title">Best products</h5>--}}
 
-                            <!-- Single Best Products -->
-                            <div class="single-best-product d-flex align-items-center">
-                                <!-- Product Thumbnail -->
-                                <div class="product-thumbnail">
-                                    <a href="#"><img src="img/bg-img/34.jpg" alt=""></a>
-                                </div>
-                                <!-- Product Info -->
-                                <div class="product-info">
-                                    <a href="#" class="pro-name">Strawberry</a>
-                                    <h6>$17.99</h6>
-                                    <div class="product-rating">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
+{{--                            <!-- Single Best Products -->--}}
+{{--                            <div class="single-best-product d-flex align-items-center">--}}
+{{--                                <!-- Product Thumbnail -->--}}
+{{--                                <div class="product-thumbnail">--}}
+{{--                                    <a href="#"><img src="img/bg-img/34.jpg" alt=""></a>--}}
+{{--                                </div>--}}
+{{--                                <!-- Product Info -->--}}
+{{--                                <div class="product-info">--}}
+{{--                                    <a href="#" class="pro-name">Strawberry</a>--}}
+{{--                                    <h6>$17.99</h6>--}}
+{{--                                    <div class="product-rating">--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                            <!-- Single Best Products -->
-                            <div class="single-best-product d-flex align-items-center">
-                                <!-- Product Thumbnail -->
-                                <div class="product-thumbnail">
-                                    <a href="#"><img src="img/bg-img/35.jpg" alt=""></a>
-                                </div>
-                                <!-- Product Info -->
-                                <div class="product-info">
-                                    <a href="#" class="pro-name">Pure Honey</a>
-                                    <h6>$17.99</h6>
-                                    <div class="product-rating">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
+{{--                            <!-- Single Best Products -->--}}
+{{--                            <div class="single-best-product d-flex align-items-center">--}}
+{{--                                <!-- Product Thumbnail -->--}}
+{{--                                <div class="product-thumbnail">--}}
+{{--                                    <a href="#"><img src="img/bg-img/35.jpg" alt=""></a>--}}
+{{--                                </div>--}}
+{{--                                <!-- Product Info -->--}}
+{{--                                <div class="product-info">--}}
+{{--                                    <a href="#" class="pro-name">Pure Honey</a>--}}
+{{--                                    <h6>$17.99</h6>--}}
+{{--                                    <div class="product-rating">--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                            <!-- Single Best Products -->
-                            <div class="single-best-product d-flex align-items-center">
-                                <!-- Product Thumbnail -->
-                                <div class="product-thumbnail">
-                                    <a href="#"><img src="img/bg-img/36.jpg" alt=""></a>
-                                </div>
-                                <!-- Product Info -->
-                                <div class="product-info">
-                                    <a href="#" class="pro-name">Green Apple</a>
-                                    <h6>$17.99</h6>
-                                    <div class="product-rating">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
+{{--                            <!-- Single Best Products -->--}}
+{{--                            <div class="single-best-product d-flex align-items-center">--}}
+{{--                                <!-- Product Thumbnail -->--}}
+{{--                                <div class="product-thumbnail">--}}
+{{--                                    <a href="#"><img src="img/bg-img/36.jpg" alt=""></a>--}}
+{{--                                </div>--}}
+{{--                                <!-- Product Info -->--}}
+{{--                                <div class="product-info">--}}
+{{--                                    <a href="#" class="pro-name">Green Apple</a>--}}
+{{--                                    <h6>$17.99</h6>--}}
+{{--                                    <div class="product-rating">--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                        <i class="fa fa-star" aria-hidden="true"></i>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                        </div>
+{{--                        </div>--}}
+{{--                        best product ends here--}}
+
 
                     </div>
                 </div>

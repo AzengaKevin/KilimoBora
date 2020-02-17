@@ -8,16 +8,17 @@
                     <div class="top-header-content d-flex align-items-center justify-content-between">
                         <!-- Top Header Content -->
                         <div class="top-header-meta">
-                            <p>Welcome to <span>Farmie</span>, we hope you will enjoy our products and have good
-                                experience</p>
+                            <p>
+                                Welcome to <span>Kilimo Bora CBO</span>
+                            </p>
                         </div>
                         <!-- Top Header Content -->
                         <div class="top-header-meta text-right">
                             <a href="#" data-toggle="tooltip" data-placement="bottom"
-                               title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <span>Email: infodeercreative@gmail.com</span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i
-                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +84 223 9000</span></a>
+                               title="KilimoBora@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <span>Email: KilimoBora@gmail.com</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+254712345678"><i
+                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +254712345678</span></a>
                         </div>
                     </div>
                 </div>
@@ -70,7 +71,7 @@
                             <i class="icon_pin_alt"></i>
                         </div>
                         <h5>Address</h5>
-                        <h6>120 Raymond Rd, Canarsie, New York</h6>
+                        <h6>Box 29, NYAMIRA</h6>
                     </div>
                 </div>
 
@@ -81,7 +82,7 @@
                             <i class="icon_phone"></i>
                         </div>
                         <h5>Phone</h5>
-                        <h6>+84 223 9000</h6>
+                        <h6>+254712345678</h6>
                     </div>
                 </div>
 
@@ -92,7 +93,7 @@
                             <i class="icon_mail_alt"></i>
                         </div>
                         <h5>Email</h5>
-                        <h6>info.deercreative@gmail.com</h6>
+                        <h6>KilimoBora@gmail.com</h6>
                     </div>
                 </div>
 
@@ -145,8 +146,9 @@
                 <div class="col-lg-6">
                     <div class="contact-maps mb-100">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28313.28917392649!2d-88.2740948914384!3d41.76219337461615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880efa1199df6109%3A0x8a1293b2ae8e0497!2sE+New+York+St%2C+Aurora%2C+IL%2C+USA!5e0!3m2!1sen!2sbd!4v1542893000723"
-                            allowfullscreen></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.768574361703!2d34.78213395567447!3d-0.6920330379248255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b3eb0bf137c71%3A0xd106e50ebec3c697!2sKisii%20University!5e0!3m2!1sen!2ske!4v1581578180321!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+
+                        </iframe>
                     </div>
                 </div>
             </div>

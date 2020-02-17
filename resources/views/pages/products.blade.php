@@ -9,16 +9,17 @@
                     <div class="top-header-content d-flex align-items-center justify-content-between">
                         <!-- Top Header Content -->
                         <div class="top-header-meta">
-                            <p>Welcome to <span>Farmie</span>, we hope you will enjoy our products and have good
-                                experience</p>
+                            <p>
+                                Welcome to <span>Kilimo Bora CBO</span>
+                            </p>
                         </div>
                         <!-- Top Header Content -->
                         <div class="top-header-meta text-right">
                             <a href="#" data-toggle="tooltip" data-placement="bottom"
-                               title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <span>Email: infodeercreative@gmail.com</span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i
-                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +84 223 9000</span></a>
+                               title="KilimoBora@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <span>Email: KilimoBora@gmail.com</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+254712345678"><i
+                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +254712345678</span></a>
                         </div>
                     </div>
                 </div>
