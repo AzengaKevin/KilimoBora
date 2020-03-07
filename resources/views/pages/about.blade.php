@@ -3,7 +3,29 @@
 @section('page', 'About')
 
 @section('top-header')
-    @include('partials.top-header')
+
+    <div class="top-header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="top-header-content d-flex align-items-center justify-content-between">
+                        <!-- Top Header Content -->
+                        <div class="top-header-meta">
+                            <p>Welcome to <span>Kilimo Bora CBO</span> </p>
+                        </div>
+                        <!-- Top Header Content -->
+                        <div class="top-header-meta text-right">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom"
+                               title="KilimoBora@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <span>Email: KilimoBora@gmail.com</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+254712345678"><i
+                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +254712345678</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('content')
@@ -36,7 +58,7 @@
                 <div class="col-12 col-sm-4 col-lg">
                     <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="100ms">
                         <img src="img/core-img/digger.png" alt="">
-                        <h5>Best Services</h5>
+                        <h5>Information Sharing</h5>
                     </div>
                 </div>
 
@@ -60,7 +82,7 @@
                 <div class="col-12 col-sm-4 col-lg">
                     <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="700ms">
                         <img src="img/core-img/tractor.png" alt="">
-                        <h5>Farm Equipment</h5>
+                        <h5>Agriculture Events</h5>
                     </div>
                 </div>
 
@@ -68,7 +90,7 @@
                 <div class="col-12 col-sm-4 col-lg">
                     <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="900ms">
                         <img src="img/core-img/sunrise.png" alt="">
-                        <h5>Organic food</h5>
+                        <h5>Community Based</h5>
                     </div>
                 </div>
             </div>
@@ -90,10 +112,13 @@
                             <h2><span>Let Us</span> Tell You Our Story</h2>
                             <img src="img/core-img/decor.png" alt="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetu adipiscing elit. Etiam nunc elit, pretium atlanta urna
-                            veloci, fermentum malesuda mina. Donec auctor nislec neque sagittis, sit amet dapibus
-                            pellentesque donal feugiat. Nulla mollis magna non
-                            sanaliquet, volutpat do zutum, ultrices consectetur, ultrices at purus.</p>
+                        <p>
+                            Kilimo Bora Private Partnership is a community based organization with an
+                            aim of supporting each other (members) through information sharing, to
+                            increase productivity and marketing along various value chains of horticulture, poultry and
+                            dairy. The power of information sharing Through interactions on social media,
+                            and especially Osho Farmers WhatsApp based in Uganda motivated us in the formation of a community based organization ...
+                        </p>
                         <a href="#" class="btn famie-btn mt-30">Read More</a>
                     </div>
                 </div>
@@ -238,11 +263,11 @@
                             <!-- Social Info -->
                             <div class="team-social-info">
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
-                                        class="fa fa-facebook"></i></a>
+                                        class="fab fa-facebook"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
-                                        class="fa fa-twitter"></i></a>
+                                        class="fab fa-twitter"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Pinterest"><i
-                                        class="fa fa-pinterest"></i></a>
+                                        class="fab fa-pinterest"></i></a>
                             </div>
                         </div>
                         <!-- Team Member Info -->
@@ -262,11 +287,11 @@
                             <!-- Social Info -->
                             <div class="team-social-info">
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
-                                        class="fa fa-facebook"></i></a>
+                                        class="fab fa-facebook"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
-                                        class="fa fa-twitter"></i></a>
+                                        class="fab fa-twitter"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Pinterest"><i
-                                        class="fa fa-pinterest"></i></a>
+                                        class="fab fa-pinterest"></i></a>
                             </div>
                         </div>
                         <!-- Team Member Info -->
@@ -286,11 +311,11 @@
                             <!-- Social Info -->
                             <div class="team-social-info">
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
-                                        class="fa fa-facebook"></i></a>
+                                        class="fab fa-facebook"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
-                                        class="fa fa-twitter"></i></a>
+                                        class="fab fa-twitter"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Pinterest"><i
-                                        class="fa fa-pinterest"></i></a>
+                                        class="fab fa-pinterest"></i></a>
                             </div>
                         </div>
                         <!-- Team Member Info -->
@@ -310,11 +335,11 @@
                             <!-- Social Info -->
                             <div class="team-social-info">
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
-                                        class="fa fa-facebook"></i></a>
+                                        class="fab fa-facebook"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
-                                        class="fa fa-twitter"></i></a>
+                                        class="fab fa-twitter"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Pinterest"><i
-                                        class="fa fa-pinterest"></i></a>
+                                        class="fab fa-pinterest"></i></a>
                             </div>
                         </div>
                         <!-- Team Member Info -->

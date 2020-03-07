@@ -1,7 +1,31 @@
 @extends('layouts.app')
 
-@section('page', 'Our Products')
+@section('top-header')
 
+    <div class="top-header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="top-header-content d-flex align-items-center justify-content-between">
+                        <!-- Top Header Content -->
+                        <div class="top-header-meta">
+                            <p>
+                                Welcome to <span>Kilimo Bora CBO</span>
+                            </p>
+                        </div>
+                        <!-- Top Header Content -->
+                        <div class="top-header-meta text-right">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom"
+                               title="KilimoBora@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <span>Email: KilimoBora@gmail.com</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+254712345678"><i
+                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +254712345678</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @section('top-header')
     @include('partials.top-header')
 @endsection
