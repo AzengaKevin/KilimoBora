@@ -27,26 +27,18 @@
         </div>
     </div>
 
+@section('top-header')
+    @include('partials.top-header')
 @endsection
 
 @section('content')
-    <div class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url('img/bg-img/18.jpg');">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12">
-                    <div class="breadcrumb-text">
-                        <h2>Our Product</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('partials.banner', ['title' => 'Our Products'])
     <div class="famie-breadcrumb">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Our Product</li>
+                    <li class="breadcrumb-item active" aria-current="page">Our Products</li>
                 </ol>
             </nav>
         </div>

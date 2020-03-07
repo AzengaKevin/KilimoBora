@@ -26,6 +26,7 @@
                             <li><a href="{{ route('about') }}">About</a></li>
 
                             <li><a href="{{ route('products') }}">Our Products</a></li>
+                            <li><a href="{{ route('posts.index') }}">Forum</a></li>
 
                             <li><a href="{{ route('news') }}">News</a></li>
                             <li><a href="{{ route('contact') }}">Contact</a></li>

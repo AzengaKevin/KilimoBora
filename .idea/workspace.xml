@@ -140,6 +140,10 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
       <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XHyD1za0rPzJ92oRDTuJu2K01A" />
@@ -198,6 +202,7 @@
       <workItem from="1581575932882" duration="4266000" />
       <workItem from="1581604665991" duration="599000" />
       <workItem from="1581924956878" duration="7146000" />
+
     </task>
     <servers />
   </component>
@@ -225,9 +230,12 @@
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1581581066529" />
     <state x="321" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1581257070102">
+
+    <state x="321" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1581870866218">
+
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="321" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1581257070102" />
+    <state x="321" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1581870866218" />
     <state x="0" y="27" width="1025" height="741" maximized="true" key="dock-window-1" timestamp="1580785034536">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -241,5 +249,6 @@
     </state>
     <state x="389" y="72" width="756" height="791" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1581517122436" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1581249818138" />
+
   </component>
 </project>
