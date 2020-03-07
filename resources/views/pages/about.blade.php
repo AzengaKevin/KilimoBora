@@ -259,7 +259,7 @@
                     <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="100ms">
                         <!-- Team Thumbnail -->
                         <div class="team-img">
-                            <img src="img/bg-img/20.jpg" alt="">
+                            <img src="img/chairperson.jpg" alt="" height="200" width="70">
                             <!-- Social Info -->
                             <div class="team-social-info">
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
@@ -272,8 +272,8 @@
                         </div>
                         <!-- Team Member Info -->
                         <div class="team-member-info">
-                            <h5>Carlos Bacca</h5>
-                            <h6>Coordinator</h6>
+                            <h5>Milton Patrice Ongeri</h5>
+                            <h6>Chairperson</h6>
                         </div>
                     </div>
                 </div>
@@ -283,7 +283,7 @@
                     <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Team Thumbnail -->
                         <div class="team-img">
-                            <img src="img/bg-img/21.jpg" alt="">
+                            <img src="img/Vchairperson.jpg" alt="" height="200" width="70">
                             <!-- Social Info -->
                             <div class="team-social-info">
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
@@ -296,8 +296,8 @@
                         </div>
                         <!-- Team Member Info -->
                         <div class="team-member-info">
-                            <h5>Emilia Clarke</h5>
-                            <h6>Controller</h6>
+                            <h5>Julius Onganga Onyancha</h5>
+                            <h6>Vice Chairperson</h6>
                         </div>
                     </div>
                 </div>
@@ -307,7 +307,7 @@
                     <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="500ms">
                         <!-- Team Thumbnail -->
                         <div class="team-img">
-                            <img src="img/bg-img/22.jpg" alt="">
+                            <img src="img/secretary.jpg" alt="" height="200" width="70">
                             <!-- Social Info -->
                             <div class="team-social-info">
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
@@ -320,8 +320,8 @@
                         </div>
                         <!-- Team Member Info -->
                         <div class="team-member-info">
-                            <h5>Brian Doherty</h5>
-                            <h6>Sales Executive</h6>
+                            <h5>Edinah Kimori</h5>
+                            <h6>Secretary</h6>
                         </div>
                     </div>
                 </div>
@@ -331,7 +331,7 @@
                     <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="700ms">
                         <!-- Team Thumbnail -->
                         <div class="team-img">
-                            <img src="img/bg-img/23.jpg" alt="">
+                            <img src="img/marketting.jpg" alt="" height="200" width="70">
                             <!-- Social Info -->
                             <div class="team-social-info">
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
@@ -344,8 +344,9 @@
                         </div>
                         <!-- Team Member Info -->
                         <div class="team-member-info">
-                            <h5>Mary O’Connor</h5>
-                            <h6>Plan Manager</h6>
+                            <h5>Ibrahim Nyaboke Akunga</h5>
+                            <h6>leader Marketing</h6>
+                            <h6>(Sub-Committee)</h6>
                         </div>
                     </div>
                 </div>
