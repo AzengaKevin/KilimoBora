@@ -36,12 +36,12 @@
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </div>
                         <!-- Cart Icon -->
-                        <div id="cartIcon">
-                            <a href="#">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                <span class="cart-quantity">2</span>
-                            </a>
-                        </div>
+{{--                        <div id="cartIcon">--}}
+{{--                            <a href="#">--}}
+{{--                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>--}}
+{{--                                <span class="cart-quantity">2</span>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
                     </div>
                     <!-- Navbar End -->
                 </div>
