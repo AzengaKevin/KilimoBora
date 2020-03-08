@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b16045-4606-4f38-8135-f19e71440ace" name="Default Changelist" comment="">
+
       <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/img/10.jpeg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/img/11.jpeg" afterDir="false" />
@@ -30,6 +31,7 @@
       <change beforePath="$PROJECT_DIR$/resources/views/pages/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/news.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/products.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,10 +200,12 @@
       <workItem from="1580792011862" duration="363000" />
       <workItem from="1581242461525" duration="8797000" />
       <workItem from="1581257014192" duration="212000" />
+
       <workItem from="1581513742315" duration="5185000" />
       <workItem from="1581575932882" duration="4266000" />
       <workItem from="1581604665991" duration="599000" />
       <workItem from="1581924956878" duration="7146000" />
+
 
     </task>
     <servers />
@@ -213,6 +217,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+
     <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1581581066529">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -231,7 +236,9 @@
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1581581066529" />
     <state x="321" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1581257070102">
 
+
     <state x="321" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1581870866218">
+
 
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -240,6 +247,7 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="0" y="27" width="1025" height="741" maximized="true" key="dock-window-1/0.27.1366.741@0.27.1366.741" timestamp="1580785034536" />
+
     <state x="425" y="197" key="run.anything.popup" timestamp="1581577538516">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
