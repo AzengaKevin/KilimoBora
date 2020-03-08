@@ -26,6 +26,7 @@
             </div>
         </div>
     </div>
+
 @section('top-header')
     @include('partials.top-header')
 @endsection

@@ -3,6 +3,7 @@
 @section('page', 'News')
 
 @section('top-header')
+
     <div class="top-header-area">
         <div class="container">
             <div class="row">

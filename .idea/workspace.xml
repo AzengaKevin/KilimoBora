@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b16045-4606-4f38-8135-f19e71440ace" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/KilimoBora.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KilimoBora.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-=======
+
       <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/img/10.jpeg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/img/11.jpeg" afterDir="false" />
@@ -48,7 +31,7 @@
       <change beforePath="$PROJECT_DIR$/resources/views/pages/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/news.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/products.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" afterDir="false" />
->>>>>>> GUI
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,17 +200,13 @@
       <workItem from="1580792011862" duration="363000" />
       <workItem from="1581242461525" duration="8797000" />
       <workItem from="1581257014192" duration="212000" />
-<<<<<<< HEAD
-      <workItem from="1581513742315" duration="1694000" />
-      <workItem from="1581730794515" duration="6717000" />
-      <workItem from="1581738188207" duration="4095000" />
-      <workItem from="1581870747141" duration="9809000" />
-=======
+
       <workItem from="1581513742315" duration="5185000" />
       <workItem from="1581575932882" duration="4266000" />
       <workItem from="1581604665991" duration="599000" />
       <workItem from="1581924956878" duration="7146000" />
->>>>>>> GUI
+
+
     </task>
     <servers />
   </component>
@@ -238,9 +217,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-<<<<<<< HEAD
-    <state x="321" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1581870866218">
-=======
+
     <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1581581066529">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -258,7 +235,11 @@
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1581581066529" />
     <state x="321" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1581257070102">
->>>>>>> GUI
+
+
+    <state x="321" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1581870866218">
+
+
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="321" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1581870866218" />
@@ -266,13 +247,7 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="0" y="27" width="1025" height="741" maximized="true" key="dock-window-1/0.27.1366.741@0.27.1366.741" timestamp="1580785034536" />
-<<<<<<< HEAD
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1581881151136">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="389" y="72" width="756" height="791" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1581515258183" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1581881151136" />
-=======
+
     <state x="425" y="197" key="run.anything.popup" timestamp="1581577538516">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -282,6 +257,6 @@
     </state>
     <state x="389" y="72" width="756" height="791" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1581517122436" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1581249818138" />
->>>>>>> GUI
+
   </component>
 </project>
