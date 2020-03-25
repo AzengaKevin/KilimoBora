@@ -54,7 +54,7 @@
 
                         <!-- Single Blog Post Area -->
                         <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="100ms">
-                            <h6>Post on <a href="#" class="post-date">18 Aug 2018</a> / <a href="#" class="post-author">Peter
+                            <h6>Post on <a href="#" class="post-date">21 Jan 2020</a> / <a href="#" class="post-author">Peter
                                     Crough</a></h6>
                             <a href="#" class="post-title">World Food day celebrations
                                 & exhibitions at ACC grounds</a>
@@ -66,6 +66,7 @@
                                 Extension and marketing services on WhatsApp walls.
                             </p>
                         </div>
+
 
                         <!-- Single Blog Post Area -->
                         <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="300ms">
@@ -83,32 +84,44 @@
                             </p>
                         </div>
 
+
                         <!-- Single Blog Post Area -->
-                        <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="500ms">
-                            <h6>Post on <a href="#" class="post-date">18 Aug 2018</a> / <a href="#" class="post-author">Peter
+                        <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+                            <h6>Post on <a href="#" class="post-date">10 Feb 2019</a> / <a href="#" class="post-author">Peter
                                     Crough</a></h6>
-                            <a href="#" class="post-title">Cattle marts: Cows take a hit at the ringside</a>
-                            <img src="img/bg-img/28.jpg" alt="" class="post-thumb">
+                            <a href="#" class="post-title">
+                                A word from the KBCBO Vice Chair Mr Julius Onyancha
+                            </a>
+                            <img src="img/5.jpeg" alt="" class="post-thumb">
                             <p class="post-excerpt">
-                                Nunc aliquet, justo non commodo conguet, denim, action bibendum purus selecao samuel
-                                eget
-                                libero. Maecenas ac viverra enim, et laoreet lacus. Etiam nisi diam, sagittis quam at...
+                                Former KBCBO secretary now vice chair Mr Julius Onyancha briefing
+                                the southern Kenya ASK Kisii show Judges on the KBCBO objectives
+                                and activities especially digital Extension and marketing services
+                                innovation at World Vision Kenya stand in July 2019.
                             </p>
                         </div>
 
+
                         <!-- Single Blog Post Area -->
-                        <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="700ms">
-                            <h6>Post on <a href="#" class="post-date">18 Aug 2018</a> / <a href="#" class="post-author">Peter
+                        <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+                            <h6>Post on <a href="#" class="post-date">21 Oct 2019</a> / <a href="#" class="post-author">Peter
                                     Crough</a></h6>
-                            <a href="#" class="post-title">Malting barley price negotiations set to commence</a>
-                            <img src="img/bg-img/29.jpg" alt="" class="post-thumb">
+                            <a href="#" class="post-title">
+                                Kilimobora’s Public Private Partners meeting
+                            </a>
+                            <img src="img/3.jpeg" alt="" class="post-thumb">
                             <p class="post-excerpt">
-                                Nunc aliquet, justo non commodo conguet, denim, action bibendum purus selecao samuel
-                                eget
-                                libero. Maecenas ac viverra enim, et laoreet lacus. Etiam nisi diam, sagittis quam at...
+                                Some of Kilimobora’s Public Private Partners after a brief meeting at
+                                Nyamusi ACC office on 17/10/2019 after World Food day celebrations
+                                and exhibitions at the ACC ground. They are drawn from Nyamira
+                                County Government, department of agriculture Livestock and fisheries,
+                                World Vision, KEPHIS , agrodealers/Agriculture stakeholders
+                                personnel.
                             </p>
                         </div>
 
+
+{{--end of news area. all news posts to be above here.--}}
                     </div>
 
                     <!-- pagination -->

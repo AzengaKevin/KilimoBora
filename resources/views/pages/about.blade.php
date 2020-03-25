@@ -155,14 +155,12 @@
                                 <div class="quote-icon">
                                     <img src="img/core-img/quote.png" alt="">
                                 </div>
-                                <h5>"Thank you for your organic products. My children like your products and they use
-                                    for
-                                    breakfast. We are loving the pure milk, freshly fruit and of course our staple,
-                                    Brown
-                                    Rice Bread. Your Gluten Free breads truly make me feel
-                                    lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I
-                                    will
-                                    use them for many years."</h5>
+                                <h5>
+                                    " Thank you for the your Newsletter publications. Since i subscribed for your newsletter
+                                    i have been getting rich agricultural information that has helped me improve my farm yields.
+                                    Thanks so much Kilimo Bora.
+                                    "
+                                </h5>
                             </div>
                             <!-- Testimonial Thumbnail Name -->
                             <div class="testimonial-thumbnail-name d-flex align-items-center">
@@ -171,7 +169,7 @@
                                 </div>
                                 <div class="testimonial-name">
                                     <h5>Mrs Lara Sullivan</h5>
-                                    <h6>Customer</h6>
+                                    <h6>Newsletter subscriber</h6>
                                 </div>
                             </div>
                         </div>
@@ -183,14 +181,12 @@
                                 <div class="quote-icon">
                                     <img src="img/core-img/quote.png" alt="">
                                 </div>
-                                <h5>"Thank you for your organic products. My children like your products and they use
-                                    for
-                                    breakfast. We are loving the pure milk, freshly fruit and of course our staple,
-                                    Brown
-                                    Rice Bread. Your Gluten Free breads truly make me feel
-                                    lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I
-                                    will
-                                    use them for many years."</h5>
+                                <h5>
+                                   " As a member of Kilimo Bora i appreciate so much for the positive change it as brought in
+                                    our community mostly for us in Nyamira. By sharing information we have learnt from each other
+                                    and from experts the association invites to give talks to the members. Am so grateful to kilimo bora. "
+
+                                </h5>
                             </div>
                             <!-- Testimonial Thumbnail Name -->
                             <div class="testimonial-thumbnail-name d-flex align-items-center">
@@ -199,7 +195,7 @@
                                 </div>
                                 <div class="testimonial-name">
                                     <h5>Ajoy Das</h5>
-                                    <h6>Client</h6>
+                                    <h6>Member</h6>
                                 </div>
                             </div>
                         </div>
