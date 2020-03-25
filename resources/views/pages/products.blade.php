@@ -27,9 +27,7 @@
         </div>
     </div>
 
-@section('top-header')
-    @include('partials.top-header')
-@endsection
+
 
 @section('content')
     @include('partials.banner', ['title' => 'Our Products'])
@@ -59,10 +57,12 @@
                             <h2><span>The Future</span> Of Agriculture </h2>
                             <img src="img/core-img/decor.png" alt="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetu adipiscing elit. Etiam nunc elit, pretium atlanta urna
-                            veloci, fermentum malesuda mina. Donec auctor nislec neque sagittis, sit amet dapibus
-                            pellentesque donal feugiat. Nulla mollis magna non
-                            sanaliquet, volutpat do zutum, ultrices consectetur, ultrices at purus.</p>
+                        <p>
+                            Kilimo Bora Private Partnership is a community based organization with an aim of supporting each other
+                            (members) through information sharing, to increase productivity and marketing along various value chains
+                            of horticulture, poultry and dairy. This community helps members to share general/professional  farming
+                            experiences so that all members can grow.
+                        </p>
                         <a href="#" class="btn famie-btn mt-30">Read More</a>
                     </div>
                 </div>
@@ -100,12 +100,13 @@
 
                 <div class="row">
                     <div class="col-12 mb-50">
-                        <p>Mauris fermentum nunc quis massa lacinia consequat. Suspendisse orci magna, pharetra sedonia
-                            risus ut,
-                            elementum mollis nisin. Nunc in sapien turpis. Donec egeto david orci pulvinar ultrices
-                            necto
-                            drax turpis.
-                            Pellentesque justo metus, semper nec ullamcorper id, gravida ultricies arcu.</p>
+                        <p>
+                            Kilimo Bora Private Partnership is a community based organization with an aim of supporting each other
+                            (members) through information sharing, to increase productivity and marketing along various value chains
+                            of horticulture, poultry and dairy. This community helps members to share general/professional  farming
+                            experiences so that all members can grow. Kilimo Bora aims at taking advantage of the power of information.
+                            sharing this information among our members enables us to grow as a whole leading to better yields.
+                        </p>
                     </div>
 
                     <!-- Single Service Area -->
@@ -116,9 +117,10 @@
                                 <img src="img/core-img/s1.png" alt="">
                                 <h5>Fruit &amp; Vegetable</h5>
                             </div>
-                            <p>Intiam eu sagittis est, aster cosmo lacini libero. Praesent dignissim sed odio velo
-                                aliquam
-                                manta legolas. </p>
+                            <p>
+                                With our various whatsapp groups, we have new unique groups purposely for the fruit and vegetable farmers.
+
+                            </p>
                         </div>
                     </div>
 
@@ -130,9 +132,9 @@
                                 <img src="img/core-img/s2.png" alt="">
                                 <h5>Meat &amp; Eggs</h5>
                             </div>
-                            <p>Intiam eu sagittis est, aster cosmo lacini libero. Praesent dignissim sed odio velo
-                                aliquam
-                                manta legolas. </p>
+                            <p>
+                                This special group will help the members share information concerning Meat &amp; Eggs farming leading to better yields.
+                            </p>
                         </div>
                     </div>
 
@@ -144,9 +146,9 @@
                                 <img src="img/core-img/s3.png" alt="">
                                 <h5>Milk &amp; Cheese</h5>
                             </div>
-                            <p>Intiam eu sagittis est, aster cosmo lacini libero. Praesent dignissim sed odio velo
-                                aliquam
-                                manta legolas. </p>
+                            <p>
+                                Most of our farmers are in this field. all general information is shared to the main Group.
+                            </p>
                         </div>
                     </div>
 
@@ -158,9 +160,9 @@
                                 <img src="img/core-img/s4.png" alt="">
                                 <h5>Rice &amp; Corn</h5>
                             </div>
-                            <p>Intiam eu sagittis est, aster cosmo lacini libero. Praesent dignissim sed odio velo
-                                aliquam
-                                manta legolas. </p>
+                            <p>
+                                Due to new farmers in the association practicing corn and rice, the association is inviting experts to give more info about the venture.
+                            </p>
                         </div>
                     </div>
 
@@ -178,7 +180,7 @@
                     <!-- Section Heading -->
                     <div class="section-heading text-center">
                         <p>Featured Products</p>
-                        <h2><span>Our Product</span> Are Highest Quality</h2>
+                        <h2><span>Our Farmer's Products</span> Are Highest Quality</h2>
                         <img src="img/core-img/decor2.png" alt="">
                     </div>
                 </div>
@@ -193,7 +195,7 @@
                         <div class="product-thumbnail">
                             <img src="img/bg-img/p1.jpg" alt="">
                             <!-- Product Tags -->
-                            <span class="product-tags">Hot</span>
+{{--                            <span class="product-tags">Hot</span>--}}
                             <!-- Product Meta Data -->
                             <div class="product-meta-data">
                                 <a href="#" data-toggle="tooltip" data-placement="top" title="Favourite"><i
@@ -207,7 +209,7 @@
                         <!-- Product Description -->
                         <div class="product-desc text-center pt-4">
                             <a href="#" class="product-title">Strawberry</a>
-                            <h6 class="price">$17.99</h6>
+{{--                            <h6 class="price">$17.99</h6>--}}
                         </div>
                     </div>
                 </div>
@@ -231,7 +233,7 @@
                         <!-- Product Description -->
                         <div class="product-desc text-center pt-4">
                             <a href="#" class="product-title">Baked Breads</a>
-                            <h6 class="price">$9.99</h6>
+{{--                            <h6 class="price">$9.99</h6>--}}
                         </div>
                     </div>
                 </div>
@@ -255,7 +257,7 @@
                         <!-- Product Description -->
                         <div class="product-desc text-center pt-4">
                             <a href="#" class="product-title">Prime Beef</a>
-                            <h6 class="price">$59.99</h6>
+{{--                            <h6 class="price">$59.99</h6>--}}
                         </div>
                     </div>
                 </div>
@@ -267,7 +269,7 @@
                         <div class="product-thumbnail">
                             <img src="img/bg-img/p4.jpg" alt="">
                             <!-- Product Tags -->
-                            <span class="product-tags bg-danger">Sale</span>
+{{--                            <span class="product-tags bg-danger">Sale</span>--}}
                             <!-- Product Meta Data -->
                             <div class="product-meta-data">
                                 <a href="#" data-toggle="tooltip" data-placement="top" title="Favourite"><i
@@ -281,7 +283,7 @@
                         <!-- Product Description -->
                         <div class="product-desc text-center pt-4">
                             <a href="#" class="product-title">Pure Honey</a>
-                            <h6 class="price"><span>$29.99</span> $19.99</h6>
+{{--                            <h6 class="price"><span>$29.99</span> $19.99</h6>--}}
                         </div>
                     </div>
                 </div>
@@ -308,14 +310,14 @@
                     <div class="newsletter-content">
                         <!-- Section Heading -->
                         <div class="section-heading white text-center">
-                            <p>What we do</p>
+                            <p>Need our Newsletters? </p>
                             <h2><span>Our Produce</span> Is Mainstay For Us</h2>
                             <img src="img/core-img/decor2.png" alt="">
                         </div>
-                        <p class="text-white mb-50 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nullam at diam convallis ligula cursus bibendum sed at enim. Class aptent taciti sociosqu ad
-                            litora torquent conubia nostra, per inceptos
-                            himenaeos.</p>
+                        <p class="text-white mb-50 text-center">
+                            With the help of agriculture experts we invite time to time, we write publications rich in agriculture
+                            information that we share with our Members. You can subscribe to be receiving them direct to your email.
+                        </p>
                     </div>
                 </div>
             </div>
