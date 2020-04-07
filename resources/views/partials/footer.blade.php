@@ -31,7 +31,7 @@
                             <ul>
                                 <li><a href="{{ route('home') }}">Home</a></li>
                                 <li><a href="{{ route('about') }}">About us</a></li>
-                                <li><a href="{{ route('news') }}">News</a></li>
+                                <li><a href="{{ route('news.index') }}">News</a></li>
                                 <li><a href="{{ route('contact') }}">Contact us</a></li>
                                 <li><a href="{{ route('products') }}">Products</a></li>
                                 <li><a href="#">Careers</a></li>
@@ -107,36 +107,4 @@
             </div>
         </div>
     </div>
-
-    <!-- Copywrite Area  -->
-{{--    <div class="copywrite-area">--}}
-{{--        <div class="container">--}}
-{{--            <div class="copywrite-text">--}}
-{{--                <div class="row align-items-center">--}}
-{{--                    <div class="col-md-6">--}}
-{{--                        <small><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->--}}
-{{--                            Copyright &copy--}}
-{{--                            <script>document.write(new Date().getFullYear());</script>--}}
-{{--                            All rights reserved | This template is made with <i class="fa fa-heart-o"--}}
-{{--                                                                                aria-hidden="true"></i> by <a--}}
-{{--                                href="https://colorlib.com" target="_blank">Colorlib</a>--}}
-{{--                        </small>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-6">--}}
-{{--                        <div class="footer-nav">--}}
-{{--                            <nav>--}}
-{{--                                <ul>--}}
-{{--                                    <li><a href="{{ route('home') }}">Home</a></li>--}}
-{{--                                    <li><a href="{{ route('about') }}">About</a></li>--}}
-{{--                                    <li><a href="{{ route('products') }}">Products</a></li>--}}
-{{--                                    <li><a href="{{ route('news') }}">News</a></li>--}}
-{{--                                    <li><a href="{{ route('contact') }}">Contact</a></li>--}}
-{{--                                </ul>--}}
-{{--                            </nav>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
 </footer>

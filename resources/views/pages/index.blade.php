@@ -159,81 +159,30 @@
                             <!-- Title -->
                             <h5 class="widget-title">Recent News</h5>
 
-                            <!-- Single Recent News Start -->
-                            <div class="single-recent-blog style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/5.jpeg" alt="" >
-                                </div>
-                                <div class="post-content">
-                                    <a href="#" class="post-title">
-                                        KBCBO participation at Kisii ASK Show courtesy of World Vision Kenya
-                                        in 2019.
-                                        </a>
-                                    <div class="post-date">18 Aug 2019</div>
-                                </div>
-                            </div>
+                            @if($news->count())
 
-                            <!-- Single Recent News Start -->
-                            <div class="single-recent-blog style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/10.jpeg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="#" class="post-title">
-                                        Vertical bags farming technology demonstrations
-                                    </a>
-                                    <div class="post-date">18 Aug 2018</div>
-                                </div>
-                            </div>
+                                @foreach($news as $new)
+                                    <!-- Single Recent News Start -->
+                                    <div class="single-recent-blog style-2 d-flex align-items-center">
+                                        <div class="post-thumbnail">
+                                            <img src="{{ $new->imageUrl() }}" alt="News Image" >
+                                        </div>
+                                        <div class="post-content">
+                                            <a href="{{ route('news.show', $new) }}" class="post-title">{{ $new->title }}</a>
+                                            <div class="post-date">{{ $new->created_at->diffForHumans() }}</div>
+                                        </div>
+                                    </div>
+                                @endforeach
 
-                            <!-- Single Recent News Start -->
-                            <div class="single-recent-blog style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/11.jpeg" alt="">
+                            @else
+                                <div>
+                                    <p class="font-weight-bold">
+                                        No News Added
+                                    </p>
                                 </div>
-                                <div class="post-content">
-                                    <a href="#" class="post-title">
-                                        KBCBO participation at Kisii ASK Show courtesy of World Vision Kenya
-                                        in 2019.
-                                    </a>
-                                    <div class="post-date">6 Feb 2019</div>
-                                </div>
-                            </div>
+                            @endif
 
-                            <!-- Single Recent News Start -->
-                            <div class="single-recent-blog style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/15.jpeg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="#" class="post-title">
-                                        KBCBO started as Kilimo Bora Public Private Partnerships group on
-                                        WhatsApp in 20/2/2017....
-                                    </a>
-                                    <div class="post-date">25 Feb 2017</div>
-                                </div>
-                            </div>
                         </div>
-
-                        <!-- Single Widget Area -->
-                        <div class="single-widget-area">
-                            <!-- Title -->
-                            <h5 class="widget-title">Tags</h5>
-                            <!-- Tags -->
-                            <ul class="famie-tags">
-                                <li><a href="#">All product</a></li>
-                                <li><a href="#">Fertilizers</a></li>
-                                <li><a href="#">Crop rotation</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Organic</a></li>
-                                <li><a href="#">Farm Practices</a></li>
-                                <li><a href="#">Meat</a></li>
-                                <li><a href="#">Stakeholders</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Single Widget Area -->
-
 
                     </div>
                 </div>

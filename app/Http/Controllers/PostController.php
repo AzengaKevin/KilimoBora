@@ -41,7 +41,7 @@ class PostController extends Controller
         //Unset Image
         unset($data['image']);
 
-        $post = auth()->user()->posts()->create($data);
+        $post = $request->user()->posts()->create($data);
 
         //Handle the uploading of images
         if ($request->has('image')) {

@@ -7,13 +7,13 @@
 @endsection
 
 @section('content')
-    @include('partials.banner', ['title' => 'FORUM', 'image' => null,])
+    @include('partials.banner', ['title' => 'NEWS', 'image' => null,])
     <div class="famie-breadcrumb">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">FORUM</li>
+                    <li class="breadcrumb-item active" aria-current="page">News</li>
                 </ol>
             </nav>
         </div>
@@ -25,22 +25,22 @@
             <!-- Posts Area -->
             <div class="col-12 col-md-8">
 
-                @if($posts->count())
+                @if($news->count())
 
                     <div class="posts-area">
-                        @foreach($posts as $post)
+                        @foreach($news as $new)
                             <!-- Single Blog Post Area -->
                             <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="100ms">
-                                <h6>Posted <a href="#" class="post-date">{{ $post->created_at->diffForHumans() }}</a> / <a href="#" class="post-author">{{ $post->user->name }}</a></h6>
-                                <a href="{{ route('posts.show', $post) }}" class="post-title">{{ $post->title }}</a>
-                                <img src="{{ asset($post->imageUrl()) }}" alt="" class="post-thumb w-100">
-                                <p class="post-excerpt">{{ Str::limit($post->body, 250) }}</p>
+                                <h6>Posted <a href="#" class="post-date">{{ $new->created_at->diffForHumans() }}</a> / <a href="#" class="post-author">{{ $new->user->name }}</a></h6>
+                                <a href="{{ route('news.show', $new) }}" class="post-title">{{ $new->title }}</a>
+                                <img src="{{ asset($new->imageUrl()) }}" alt="News Image" class="post-thumb w-100">
+                                <p class="post-excerpt">{{ Str::limit($new->content, 250) }}</p>
                             </div>
                         @endforeach
             
                     </div>
                 @else
-                    <p class="font-weight-bold">No blog posts adde yet</p>
+                    <p class="font-weight-bold">No news posted yet</p>
                 @endif
     
               <!-- pagination -->
@@ -110,7 +110,6 @@
                   @endif
 
               </div>
-    
     
                 <!-- Single Widget Area -->
                 <div class="single-widget-area">
