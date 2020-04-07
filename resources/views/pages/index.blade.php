@@ -1,54 +1,38 @@
 @extends('layouts.app')
 @section('content')
+
+    @if($sliders->count())
     <div class="hero-area">
         <div class="welcome-slides owl-carousel">
 
-            <!-- Single Welcome Slides -->
-            <div class="single-welcome-slides bg-img bg-overlay jarallax"
-                 style="background-image: url(img/bg-img/1.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12 col-lg-10">
-                            <div class="welcome-content">
-                                <h2 data-animation="fadeInUp" data-delay="200ms">The hearth of the farm is the true
-                                    center
-                                    of our universe.</h2>
-                                <p data-animation="fadeInDown" data-delay="400ms">Empowered agricultural Value Chains
-                                    through access to innovation and technology dissemination.</p>
-                                <a href="#" class="btn famie-btn mt-4" data-animation="bounceInUp" data-delay="600ms">Contact
-                                    Us</a>
+            @foreach($sliders as $slider)
+                <!-- Single Welcome Slides -->
+                <div class="single-welcome-slides bg-img bg-overlay jarallax"
+                    style="background-image: url({{ $slider->image->url }});">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12 col-lg-10">
+                                <div class="welcome-content">
+                                    <h2 data-animation="fadeInUp" data-delay="200ms">{{ $slider->title }}</h2>
+                                    <p data-animation="fadeInDown" data-delay="400ms">{{ $slider->description }}</p>
+                                    <a href="{{ $slider->button_url }}" class="btn famie-btn mt-4" data-animation="bounceInUp" data-delay="600ms">{{ $slider->button_text }}</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Single Welcome Slides -->
-            <div class="single-welcome-slides bg-img bg-overlay jarallax"
-                 style="background-image: url(img/bg-img/7.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12 col-lg-10">
-                            <div class="welcome-content">
-                                <h2 data-animation="fadeInDown" data-delay="200ms">The hearth of the farm is the true
-                                    center
-                                    of our universe.</h2>
-                                <p data-animation="fadeInDown" data-delay="400ms">Empowered agricultural Value Chains
-                                    through access to innovation and technology dissemination.</p>
-                                <a href="#" class="btn famie-btn mt-4" data-animation="bounceInDown" data-delay="600ms">Contact
-                                    Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            @endforeach
         </div>
     </div>
+    @else
+        <div class="p-4 text-center bg-secondary">
+            <span class="font-weight-bold text-white">Upload Carousel Images in the Admin section please</span>
+        </div>
+    @endif
     <!--Hero Area End-->
 
     <section class="famie-blog-area">
-        <div class="container">
+        <div class="container pt-5">
             <div class="row">
                 <!-- Posts Area -->
                 <div class="col-12 col-md-8">

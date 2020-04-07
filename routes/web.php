@@ -21,7 +21,8 @@ Route::view('test', 'layouts.app');
 Route::name('admin.')->group(function(){
     Route::prefix('admin')->group(function(){
         Route::resources([
-            'news' => 'Admin\NewsController'
+            'news' => 'Admin\NewsController',
+            'carousels' => 'Admin\CarouselController'
         ]);
     });
 });
