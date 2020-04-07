@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-    @include('partials.banner', ['title' => $post->title])
+    @include('partials.banner', ['title' => $post->title, 'image' => $post->imageUrl()])
     <div class="famie-breadcrumb">
         <div class="container">
             <nav aria-label="breadcrumb">
@@ -23,12 +23,9 @@
             </nav>
         </div>
     </div>
-    <div class="container pt-4">
-        @if($post->image)
-            <img src="/{{ $post->image->url }}" class="w-100" alt="Post Image">
-        @endif
-
-        <p class="py-3" style="font-size: 1.25rem">{{ $post->body }}</p>
+    <div class="container">
+        <h6>Posted <a href="#" class="post-date">{{ $post->created_at->diffForHumans() }}</a> / <a href="#" class="post-author">{{ $post->user->name }}</a></h6>
+        <p class="py-3" style="font-size: 1.15rem">{{ $post->body }}</p>
 
         <div class="">
             <h4 class="font-weight-bold">Comments</h4>

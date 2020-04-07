@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-    @include('partials.banner', ['title' => 'FORUM'])
+    @include('partials.banner', ['title' => 'FORUM', 'image' => null,])
     <div class="famie-breadcrumb">
         <div class="container">
             <nav aria-label="breadcrumb">
@@ -18,43 +18,206 @@
             </nav>
         </div>
     </div>
+    
+    <section class="famie-blog-area">
+        <div class="container">
+          <div class="row">
+            <!-- Posts Area -->
+            <div class="col-12 col-md-8">
 
-    <div class="container-fluid pt-2">
-        <a class="btn famie-btn" href="{{ route('posts.create') }}">New Post</a>
-        @if($posts->count())
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action active mt-3">All Posts</a>
+                @if($posts->count())
 
-                        @foreach($categories as $category)
-                            <a href="#" class="list-group-item list-group-item-action">{{ $category->name }}</a>
+                    <div class="posts-area">
+                        @foreach($posts as $post)
+                            <!-- Single Blog Post Area -->
+                            <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+                                <h6>Posted <a href="#" class="post-date">{{ $post->created_at->diffForHumans() }}</a> / <a href="#" class="post-author">{{ $post->user->name }}</a></h6>
+                                <a href="{{ route('posts.show', $post) }}" class="post-title">{{ $post->title }}</a>
+                                <img src="{{ asset($post->imageUrl()) }}" alt="" class="post-thumb w-100">
+                                <p class="post-excerpt">{{ Str::limit($post->body, 250) }}</p>
+                            </div>
                         @endforeach
+            
                     </div>
-                </div>
-                <div class="col-md-10 py-3">
-                    @foreach($posts as $post)
-                        <div class="row mb-3">
-                            <div class="col-sm-2 col-md-1">
-                                <img src="{{ $post->user->avatar() }}" class="w-100 img-thumbnail"
-                                     style="max-width: 128px"
-                                     alt="Avatar"/>
-                            </div>
-                            <div class="col-sm-10">
-                                <h5 class="font-weight-bold">
-                                    <a class="text-uppercase"
-                                       href="{{ route('posts.show', $post) }}">{{ $post->title }}
-                                    </a>
-                                </h5>
-                                <p class="" style="font-size: 1.05rem">{{ $post->body }}</p>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
+                @else
+                    <p class="font-weight-bold">No blog posts adde yet</p>
+                @endif
+    
+              <!-- pagination -->
+              <nav>
+                <ul class="pagination wow fadeInUp" data-wow-delay="900ms">
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
+              </nav>
             </div>
-        @else
-            <p class="font-weight-bold">No posts yet</p>
-        @endif
-    </div>
+    
+            <!-- Sidebar Area -->
+            <div class="col-12 col-md-4">
+              <div class="sidebar-area">
+    
+                <!-- Single Widget Area -->
+                <div class="single-widget-area">
+                  <form action="#" method="post" class="search-widget-form">
+                    <input type="search" class="form-control" placeholder="Search">
+                    <button type="submit"><i class="icon_search" aria-hidden="true"></i></button>
+                  </form>
+                </div>
+    
+                <!-- Single Widget Area -->
+                <div class="single-widget-area">
+                  <!-- Title -->
+                  <h5 class="widget-title">Catagories</h5>
+                  <!-- Cata List -->
+                  @if($categories->count())
+                    <ul class="cata-list">
+                        @foreach($categories as $category)
+                            <li><a href="#">{{ $category->name }}</a></li>
+                        @endforeach
+                    </ul>
+                  @else
+                    <p class="font-weight-bold">Add Categories Please</p>
+                  @endif
+                </div>
+    
+                <!-- Single Widget Area -->
+                <div class="single-widget-area">
+                  <!-- Title -->
+                  <h5 class="widget-title">Recent News</h5>
+    
+                  <!-- Single Recent News Start -->
+                  <div class="single-recent-blog style-2 d-flex align-items-center">
+                    <div class="post-thumbnail">
+                      <img src="img/bg-img/30.jpg" alt="">
+                    </div>
+                    <div class="post-content">
+                      <a href="#" class="post-title">US milk production continues its upward trajectory for 2018</a>
+                      <div class="post-date">18 Aug 2018</div>
+                    </div>
+                  </div>
+    
+                  <!-- Single Recent News Start -->
+                  <div class="single-recent-blog style-2 d-flex align-items-center">
+                    <div class="post-thumbnail">
+                      <img src="img/bg-img/31.jpg" alt="">
+                    </div>
+                    <div class="post-content">
+                      <a href="#" class="post-title">USDA'S crop ratings more ahead for corn, drop for soybeans</a>
+                      <div class="post-date">18 Aug 2018</div>
+                    </div>
+                  </div>
+    
+                  <!-- Single Recent News Start -->
+                  <div class="single-recent-blog style-2 d-flex align-items-center">
+                    <div class="post-thumbnail">
+                      <img src="img/bg-img/32.jpg" alt="">
+                    </div>
+                    <div class="post-content">
+                      <a href="#" class="post-title">Auction report: Bids aplenty for massive John Deere collection</a>
+                      <div class="post-date">18 Aug 2018</div>
+                    </div>
+                  </div>
+    
+                  <!-- Single Recent News Start -->
+                  <div class="single-recent-blog style-2 d-flex align-items-center">
+                    <div class="post-thumbnail">
+                      <img src="img/bg-img/33.jpg" alt="">
+                    </div>
+                    <div class="post-content">
+                      <a href="#" class="post-title">Wool prices expected to remain competitive as demand is grow</a>
+                      <div class="post-date">18 Aug 2018</div>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- Single Widget Area -->
+                <div class="single-widget-area">
+                  <!-- Title -->
+                  <h5 class="widget-title">Tags</h5>
+                  <!-- Tags -->
+                  <ul class="famie-tags">
+                    <li><a href="#">All product</a></li>
+                    <li><a href="#">Freshy Fruit</a></li>
+                    <li><a href="#">Sweet Corn</a></li>
+                    <li><a href="#">Chicken</a></li>
+                    <li><a href="#">Organic</a></li>
+                    <li><a href="#">Farm Practices</a></li>
+                    <li><a href="#">Meat</a></li>
+                    <li><a href="#">Special Recipe</a></li>
+                  </ul>
+                </div>
+    
+                <!-- Single Widget Area -->
+                <div class="single-widget-area">
+                  <!-- Title -->
+                  <h5 class="widget-title">Best products</h5>
+    
+                  <!-- Single Best Products -->
+                  <div class="single-best-product d-flex align-items-center">
+                    <!-- Product Thumbnail -->
+                    <div class="product-thumbnail">
+                      <a href="#"><img src="img/bg-img/34.jpg" alt=""></a>
+                    </div>
+                    <!-- Product Info -->
+                    <div class="product-info">
+                      <a href="#" class="pro-name">Strawberry</a>
+                      <h6>$17.99</h6>
+                      <div class="product-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Single Best Products -->
+                  <div class="single-best-product d-flex align-items-center">
+                    <!-- Product Thumbnail -->
+                    <div class="product-thumbnail">
+                      <a href="#"><img src="img/bg-img/35.jpg" alt=""></a>
+                    </div>
+                    <!-- Product Info -->
+                    <div class="product-info">
+                      <a href="#" class="pro-name">Pure Honey</a>
+                      <h6>$17.99</h6>
+                      <div class="product-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Single Best Products -->
+                  <div class="single-best-product d-flex align-items-center">
+                    <!-- Product Thumbnail -->
+                    <div class="product-thumbnail">
+                      <a href="#"><img src="img/bg-img/36.jpg" alt=""></a>
+                    </div>
+                    <!-- Product Info -->
+                    <div class="product-info">
+                      <a href="#" class="pro-name">Green Apple</a>
+                      <h6>$17.99</h6>
+                      <div class="product-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 @endsection
-

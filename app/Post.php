@@ -27,4 +27,8 @@ class Post extends Model
     {
         return $this->morphMany(Comment::class, 'commentable')->whereNull('parent_id');
     }
+
+    public function imageUrl(){
+        return is_null($this->image) ? "/img/bg-img/noimage.png" : $this->image->url;
+    }
 }

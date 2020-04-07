@@ -30,7 +30,7 @@
 
 
 @section('content')
-    @include('partials.banner', ['title' => 'Our Products'])
+    @include('partials.banner', ['title' => 'Our Products', 'image' => null,])
     <div class="famie-breadcrumb">
         <div class="container">
             <nav aria-label="breadcrumb">
