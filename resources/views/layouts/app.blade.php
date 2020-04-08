@@ -20,6 +20,12 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <style>
+        #btn-slide{
+            border-radius:70px;
+        }
+        
+    </style>
 </head>
 
 <body>

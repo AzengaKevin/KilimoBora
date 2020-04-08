@@ -11,7 +11,7 @@
                         <!-- Top Header Content -->
                         <div class="top-header-meta">
                             <p>
-                                Welcome to <span>Kilimo Bora CBO</span>
+                                Welcome to <span><a href="http://kilimobora.co.ke">Kilimo Bora CBO</a></span>
                             </p>
                         </div>
                         <!-- Top Header Content -->
@@ -20,7 +20,7 @@
                                title="KilimoBora@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 <span>Email: KilimoBora@gmail.com</span></a>
                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="+254712345678"><i
-                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +254712345678</span></a>
+                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +2547 - 2409 - 5562</span></a>
                         </div>
                     </div>
                 </div>

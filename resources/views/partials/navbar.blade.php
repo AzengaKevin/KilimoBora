@@ -1,7 +1,9 @@
-<div class="famie-main-menu">
-    <div class="classy-nav-container breakpoint-off">
+    
+<div class="famie-main-menu" >
+    <div class="classy-nav-container breakpoint-off"  style="box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);background-color:#1B842C">
         <div class="container">
             <!-- Menu -->
+            
             <nav class="classy-navbar justify-content-between" id="famieNav">
                 <!-- Nav Brand -->
                 <a href="{{ route('home') }}" class="nav-brand">
@@ -20,13 +22,13 @@
                         <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                     </div>
                     <!-- Navbar Start -->
-                    <div class="classynav">
+                    <div class="classynav ">
                         <ul>
-                            <li class="active"><a href="{{ route('home') }}">Home</a></li>
-                            <li><a href="{{ route('about') }}">About</a></li>
+                            <li class="active"><a href="{{ route('home') }}" style="color:#fff">Home</a></li>
+                            <li ><a href="{{ route('about') }}" style="color:#fff">About</a></li>
 
-                            <li><a href="{{ route('products') }}">Our Products</a></li>
-                            <li><a href="{{ route('posts.index') }}">Forum</a></li>
+                            <li><a href="{{ route('products') }}" style="color:#fff">Our Products</a></li>
+                            <li><a href="{{ route('posts.index') }}" style="color:#fff">Forum</a></li>
 
                             <li><a href="{{ route('news.index') }}">News</a></li>
                             <li><a href="{{ route('events.index') }}">Events</a></li>
@@ -34,7 +36,7 @@
                         </ul>
                         <!-- Search Icon -->
                         <div id="searchIcon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <i class="fa fa-search text-white" aria-hidden="true"></i>
                         </div>
                         <!-- Cart Icon -->
 {{--                        <div id="cartIcon">--}}
