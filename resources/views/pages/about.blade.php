@@ -2,7 +2,7 @@
 
 @section('page', 'About')
 
-@section('top-header')
+{{-- @section('top-header')
 
     <div class="top-header-area">
         <div class="container">
@@ -27,7 +27,7 @@
         </div>
     </div>
 
-@endsection
+@endsection --}}
 
 @section('content')
     @include('partials.banner', ['title' => 'About', 'image' => null,])
@@ -250,21 +250,21 @@
             </div>
 
             <div class="row">
-
                 <!-- Single Team Member -->
+            
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="100ms">
                         <!-- Team Thumbnail -->
                         <div class="team-img">
-                            <img src="img/chairperson.jpg" alt="" height="200" width="70">
+                            <img src="img/chairperson.jpg" alt="chairperson logo" height="100" width="100" style="border-radius: 50%">
                             <!-- Social Info -->
                             <div class="team-social-info">
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
                                         class="fab fa-facebook"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
                                         class="fab fa-twitter"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Pinterest"><i
-                                        class="fab fa-pinterest"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="right" title="Email"><i
+                                        class="fab fa-envelope-square"></i></a>
                             </div>
                         </div>
                         <!-- Team Member Info -->
@@ -280,7 +280,7 @@
                     <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Team Thumbnail -->
                         <div class="team-img">
-                            <img src="img/Vchairperson.jpg" alt="" height="200" width="70">
+                            <img src="img/Vchairperson.jpg" alt="" height="100" width="100" class="rounded-circle">
                             <!-- Social Info -->
                             <div class="team-social-info">
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
@@ -293,7 +293,7 @@
                         </div>
                         <!-- Team Member Info -->
                         <div class="team-member-info">
-                            <h5>Julius Onganga Onyancha</h5>
+                            <h5>Julius Ongaga Onyancha</h5>
                             <h6>Vice Chairperson</h6>
                         </div>
                     </div>
@@ -304,7 +304,7 @@
                     <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="500ms">
                         <!-- Team Thumbnail -->
                         <div class="team-img">
-                            <img src="img/secretary.jpg" alt="" height="200" width="70">
+                            <img src="img/secretary.jpg" alt="" height="200" width="70" class="rounded-circle">
                             <!-- Social Info -->
                             <div class="team-social-info">
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
@@ -317,7 +317,7 @@
                         </div>
                         <!-- Team Member Info -->
                         <div class="team-member-info">
-                            <h5>Edinah Kimori</h5>
+                            <h5>Edina Kimori</h5>
                             <h6>Secretary</h6>
                         </div>
                     </div>
@@ -328,7 +328,7 @@
                     <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="700ms">
                         <!-- Team Thumbnail -->
                         <div class="team-img">
-                            <img src="img/marketting.jpg" alt="" height="200" width="70">
+                            <img src="img/marketting.jpg" alt="" height="200" width="70" class="rounded-circle">
                             <!-- Social Info -->
                             <div class="team-social-info">
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
@@ -342,8 +342,7 @@
                         <!-- Team Member Info -->
                         <div class="team-member-info">
                             <h5>Ibrahim Nyaboke Akunga</h5>
-                            <h6>leader Marketing</h6>
-                            <h6>(Sub-Committee)</h6>
+                            <h6>leader Marketing  (Sub-Committee)</h6>
                         </div>
                     </div>
                 </div>

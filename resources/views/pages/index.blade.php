@@ -15,8 +15,7 @@
                                     of our universe.</h2>
                                 <p data-animation="fadeInDown" data-delay="400ms">Empowered agricultural Value Chains
                                     through access to innovation and technology dissemination.</p>
-                                <a href="#" class="btn famie-btn mt-4" data-animation="bounceInUp" data-delay="600ms">Contact
-                                    Us</a>
+                                <a href="#" id="btn-slide" class="btn famie-btn mt-4" data-animation="bounceInUp" data-delay="600ms">more <i class="fas fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -35,8 +34,7 @@
                                     of our universe.</h2>
                                 <p data-animation="fadeInDown" data-delay="400ms">Empowered agricultural Value Chains
                                     through access to innovation and technology dissemination.</p>
-                                <a href="#" class="btn famie-btn mt-4" data-animation="bounceInDown" data-delay="600ms">Contact
-                                    Us</a>
+                                <a href="#" id="btn-slide" class="btn famie-btn mt-4" data-animation="bounceInDown" data-delay="600ms">more <i class="fas fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -56,8 +54,7 @@
 
                         <!-- Single Blog Post Area -->
                         <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="100ms">
-                            <h6>Post on <a href="#" class="post-date">18 Aug 2018</a> / <a href="#" class="post-author">Peter
-                                    Crough</a></h6>
+                        
                             <a href="#" class="post-title">
                                 World Food day celebrations
                                 & exhibitions at ACC grounds
