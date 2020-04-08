@@ -38,76 +38,31 @@
                 <div class="col-12 col-md-8">
                     <div class="posts-area">
 
+                        @if($events->count())
+
                         <!-- Single Blog Post Area -->
                         <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="100ms">
-                            <h6>Post on <a href="#" class="post-date">18 Aug 2018</a> / <a href="#" class="post-author">Peter
-                                    Crough</a></h6>
-                            <a href="#" class="post-title">
-                                World Food day celebrations
-                                & exhibitions at ACC grounds
-                            </a>
+                            <h6>Event Date: <a href="#" class="post-date">{{ $events->first()->when }}</a></h6>
+                            <a href="#" class="post-title">{{ $events->first()->title}}</a>
                             <div class="row">
-                                <div class="col-6">
-                                    <img src="img/4.jpeg" alt="" class="post-thumb">
+                                <div class="col-7">
+                                    <img src="{{ $events->first()->imageUrl() }}" alt="" class="post-thumb">
                                 </div>
-                                <div class="col-6">
-                                    <p class="post-excerpt">
-                                        The theme "Change the future of migration.
-                                        Invest in food security and rural development"
-                                        underlined the need to address root causes of migration such as poverty,
-                                        food insecurity, inequality, unemployment and a lack of social safety nets....
-                                    </p>
-                                    <a href="#" class="post-title">
-                                    <h5 style="margin-top: 5px;">Featured events...</h5>
-                                    </a>
+                                <div class="col-5">
+                                    <p class="post-excerpt">{{ Str::Limit($events->first()->content, 288) }}</p>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <a href="{{ route('events.index') }}" class="btn famie-btn mt-30">More Events...</a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- ##### About Us Area Start ##### -->
-                        <section class="about-us-area">
-                            <div class="container">
-                                <div class="row align-items-center">
-
-                                    <!-- About Us Content -->
-                                    <div class="col-12 col-md-8">
-                                        <div class="about-us-content mb-100">
-                                            <!-- Section Heading -->
-                                            <div class="section-heading">
-                                                <p>About us</p>
-                                                <h2><span>Let Us</span> Tell You Our Story</h2>
-                                                <img src="img/core-img/decor.png" alt="">
-                                            </div>
-                                            <p>
-                                                Kilimo Bora Private Partnership is a community based organization with an
-                                                aim of supporting each other (members) through information sharing, to
-                                                increase productivity and marketing along various value chains of horticulture, poultry and
-                                                dairy. The power of information sharing Through interactions on social media,
-                                                and especially Osho Farmers WhatsApp based in Uganda motivated us in the formation of a community based organization ...
-                                            </p>
-                                            <a href="#" class="btn famie-btn mt-30">Read More</a>
-                                        </div>
-                                    </div>
-
-                                    <!-- Famie Video Play -->
-                                    <div class="col-12 col-md-4">
-                                        <div class="famie-video-play mb-100">
-                                            <img src="img/bg-img/6.jpg" alt="">
-                                            <!-- Play Icon -->
-                                            <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-icon"><i
-                                                    class="fa fa-play"></i></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </section>
-                        <!-- ##### About Us Area End ##### -->
+                        @else
+                            <p class="font-weight-bold">No Events Posted so far</p>
+                        @endif
 
 
                     </div>
-
-                    <!-- pagination starts here -->
 
                     <!-- pagination ends here -->
                 </div>
@@ -117,25 +72,34 @@
                     <div class="sidebar-area">
 
                         <!-- Single Widget Area -->
-                        <a href="#" class="icon fab fa-facebook"></a>
-                        <a href="#" class="icon fab fa-twitter"></a>
-                        <a href="#" class="icon fab fa-google"></a>
-                        <a href="#" class="icon fab fa-youtube"></a>
-                        <a href="#" class="icon fa fa-envelope"></a>
+                        <div class="single-widget-area">
+
+
+                            <!-- Title -->
+                            <h5 class="widget-title">Social Media</h5>
+
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="icon fab fa-facebook"></a>
+                                <a href="#" class="icon fab fa-twitter"></a>
+                                <a href="#" class="icon fab fa-google"></a>
+                                <a href="#" class="icon fab fa-youtube"></a>
+                            </div>
+                        </div>
 
                         <!-- Single Widget Area -->
                         <div class="single-widget-area">
                             <!-- Title -->
                             <h5 class="widget-title">Events</h5>
                             <!-- Cata List -->
-                            <ul class="cata-list">
-                                <li><a href="#">World Food day celebrations and exhibitions</a></li>
-                                <li><a href="#">Members meeting at Nyamusi ACC office</a></li>
-                                <li><a href="#">Kisii ASK Show</a></li>
-                                <li><a href="#">Farming &amp; Agricultural</a></li>
-                                <li><a href="#">Nyamira County avocado launch</a></li>
-                                <li><a href="#">How to Manage Soil Fertility</a></li>
-                            </ul>
+                            @if($events->count())
+                                <ul class="cata-list">
+                                    @foreach($events as $event)
+                                        <li><a href="#">{{ $event->title }}</a></li>
+                                    @endforeach
+                                </ul>
+                            @else
+                                <p class="font-weight-bold">No evenys posted yet</p>
+                            @endif
                         </div>
 
                         <!-- Single Widget Area -->
@@ -195,7 +159,7 @@
                             dairy. The power of information sharing Through interactions on social media,
                             and especially Osho Farmers WhatsApp based in Uganda motivated us in the formation of a community based organization ...
                         </p>
-                        <a href="#" class="btn famie-btn mt-30">Read More</a>
+                        <a href="{{ route('about') }}" class="btn famie-btn mt-30">Read More</a>
                     </div>
                 </div>
 

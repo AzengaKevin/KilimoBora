@@ -13,6 +13,10 @@ Route::resources([
     'news' => 'NewsController',
 ]);
 
+//Front End Routes
+Route::get('/events', 'EventController@index')->name('events.index');
+Route::get('/events/{event}', 'EventController@show')->name('events.show');
+
 //Comments routes
 Route::post('posts/{post}/comments', 'CommentController@store')->name('comments.store');
 Route::view('test', 'layouts.app');
@@ -22,7 +26,8 @@ Route::name('admin.')->group(function(){
     Route::prefix('admin')->group(function(){
         Route::resources([
             'news' => 'Admin\NewsController',
-            'carousels' => 'Admin\CarouselController'
+            'carousels' => 'Admin\CarouselController',
+            'events' => 'Admin\EventController',
         ]);
     });
 });

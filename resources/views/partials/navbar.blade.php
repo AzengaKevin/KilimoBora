@@ -29,6 +29,7 @@
                             <li><a href="{{ route('posts.index') }}">Forum</a></li>
 
                             <li><a href="{{ route('news.index') }}">News</a></li>
+                            <li><a href="{{ route('events.index') }}">Events</a></li>
                             <li><a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
                         <!-- Search Icon -->

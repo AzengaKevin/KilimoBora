@@ -16,16 +16,14 @@ class PostController extends Controller
 
     public function index()
     {
-        $categories = Category::latest()->get();
         $posts = Post::latest()->get();
 
-        return view('posts.index', compact('categories', 'posts'));
+        return view('posts.index', compact('posts'));
     }
 
     public function create()
     {
-        $categories = Category::latest()->get();
-        return view('posts.create', compact('categories'));
+        return view('posts.create');
 
     }
 
