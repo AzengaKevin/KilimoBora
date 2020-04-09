@@ -2,7 +2,7 @@
 
 @section('page', 'Contact Us')
 
-@section('top-header')
+{{-- @section('top-header')
     <div class="top-header-area">
         <div class="container">
             <div class="row">
@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-@endsection
+@endsection --}}
 
 @section('content')
     @include('partials.banner', ['title' => 'Contact Us', 'image' => null,])

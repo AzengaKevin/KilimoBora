@@ -6,6 +6,9 @@ Route::get('/', 'PagesController@index')->name('home');
 Route::get('/about', 'PagesController@about')->name('about');
 Route::get('/contact', 'PagesController@contact')->name('contact');
 Route::get('/products', 'PagesController@products')->name('products');
+Route::get('/history', 'PagesController@history')->name('history');
+Route::get('/vision', 'PagesController@vision')->name('vision');
+Route::get('/core', 'PagesController@core')->name('core');
 
 Route::resources([
     'categories' => 'CategoryController',

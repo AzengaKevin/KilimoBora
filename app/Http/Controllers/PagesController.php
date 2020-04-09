@@ -30,4 +30,16 @@ class PagesController extends Controller
     {
         return view('pages.products');
     }
+    public function history()
+    {
+        return view('pages.history');
+    }
+    public function vision()
+    {
+        return view('pages.vision');
+    }
+    public function core()
+    {
+        return view('pages.core');
+    }
 }

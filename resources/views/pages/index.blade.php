@@ -98,17 +98,16 @@
                                                 dairy. The power of information sharing Through interactions on social media,
                                                 and especially Osho Farmers WhatsApp based in Uganda motivated us in the formation of a community based organization ...
                                             </p>
-                                            <a href="#" class="btn famie-btn mt-30">Read More</a>
+                                        <a href="{{ route('about')}}" class="btn famie-btn mt-30" style="border-radius:70px">Read More</a>
                                         </div>
                                     </div>
 
                                     <!-- Famie Video Play -->
                                     <div class="col-12 col-md-4">
                                         <div class="famie-video-play mb-100">
-                                            <img src="img/bg-img/6.jpg" alt="">
+                                            <img src="img/logo.jpeg" alt="">
                                             <!-- Play Icon -->
-                                            <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-icon"><i
-                                                    class="fa fa-play"></i></a>
+                                           
                                         </div>
                                     </div>
 
@@ -188,44 +187,6 @@
     </section>
     <!-- Blog Area END -->
 
-    <section class="about-us-area">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <!-- About Us Content -->
-                <div class="col-12 col-md-8">
-                    <div class="about-us-content mb-100">
-                        <!-- Section Heading -->
-                        <div class="section-heading">
-                            <p>About us</p>
-                            <h2><span>Let Us</span> Tell You Our Story</h2>
-                            <img src="img/core-img/decor.png" alt="">
-                        </div>
-                        <p>
-                            Kilimo Bora Private Partnership is a community based organization with an
-                            aim of supporting each other (members) through information sharing, to
-                            increase productivity and marketing along various value chains of horticulture, poultry and
-                            dairy. The power of information sharing Through interactions on social media,
-                            and especially Osho Farmers WhatsApp based in Uganda motivated us in the formation of a community based organization ...
-                        </p>
-                        <a href="#" class="btn famie-btn mt-30">Read More</a>
-                    </div>
-                </div>
-
-                <!-- Famie Video Play -->
-                <div class="col-12 col-md-4">
-                    <div class="famie-video-play mb-100">
-                        <img src="img/bg-img/6.jpg" alt="">
-                        <!-- Play Icon -->
-                        <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-icon"><i
-                                class="fa fa-play"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- About Us Area End -->
 
     <section class="services-area d-flex flex-wrap">
         <!-- Service Thumbnail -->
@@ -320,32 +281,29 @@
         <div class="row">
             <div class="col-12" style="margin-left: 15%; margin-top: 20px;">
                 <div class="section-heading">
-                    <p>OUR</p>
                     <h2><span>Partners</span></h2>
                     <img src="img/core-img/decor.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="row">
-
-            <div class="col-lg-3 col-md-6" style=" margin-bottom: 80px;">
-                <a href="#" class="fa fa-angle-double-left"></a>
-                <img src="img/kilimoboralogo.jpg" alt="">
+        <div class="row" style="box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);">
+                <div class="col-lg-4 col-md-6" style=" margin-bottom: 80px;">
+                <a href="https://www.nyamira.go.ke/" target="_blank" title="Nyamira County">
+                    <img src="img/nyamira.jpeg" alt="nyamira county logo">
+                </a>
+            
+            </div>
+            <div class="col-lg-4 col-md-6" style=" margin-bottom: 80px;">
+                <a href="https://www.wvi.org/kenya" target="_blank" title="World Vision Kenya">
+                    <img src="img/worldVision.jpg" alt="world vission kenya- kisii branch">
+                </a>
 
             </div>
-            <div class="col-lg-3 col-md-6" style=" margin-bottom: 80px;">
-                <img src="img/kilimoboralogo.jpg" alt="">
-
+            <div class="col-lg-4 col-md-6" style=" margin-bottom: 80px;">
+                <a href="https://ask.co.ke/kisii/" target="_blank" title="Agriculture Society of Kenya (Kisii Branch)">
+                <img src="img/ask.png" alt="Agriculture Society of Kenya-Kisii branch">
+                </a>
             </div>
-            <div class="col-lg-3 col-md-6" style=" margin-bottom: 80px;">
-                <img src="img/kilimoboralogo.jpg" alt="">
-
-            </div>
-            <div class="col-lg-3 col-md-6" style=" margin-bottom: 80px;">
-                <img src="img/kilimoboralogo.jpg" alt="">
-                <a href="#" class="fa fa-angle-double-right"></a>
-            </div>
-
         </div>
     </div>
     <!-- Our Partners Area End -->
@@ -449,58 +407,6 @@
     </section>
     <!-- Testimonial Area End -->
 
-    <section class="contact-area section-padding-100-0">
-        <div class="container">
-            <div class="row justify-content-between">
-
-                <!-- Contact Content -->
-                <div class="col-12 col-lg-5">
-                    <div class="contact-content mb-100">
-                        <!-- Section Heading -->
-                        <div class="section-heading">
-                            <p>Contact now</p>
-                            <h2><span>Get In Touch</span> With Us</h2>
-                            <img src="img/core-img/decor.png" alt="">
-                        </div>
-                        <!-- Contact Form Area -->
-                        <div class="contact-form-area">
-                            <form action="index.html" method="post">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <input type="text" class="form-control" name="name" placeholder="Your Name">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <input type="email" class="form-control" name="email" placeholder="Your Email">
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control" name="subject"
-                                               placeholder="Your Subject">
-                                    </div>
-                                    <div class="col-12">
-                                    <textarea name="message" class="form-control" cols="30" rows="10"
-                                              placeholder="Your Message"></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="submit" class="btn famie-btn">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Maps -->
-                <div class="col-lg-6">
-                    <div class="contact-maps mb-100">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.768574361703!2d34.78213395567447!3d-0.6920330379248255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b3eb0bf137c71%3A0xd106e50ebec3c697!2sKisii%20University!5e0!3m2!1sen!2ske!4v1581578180321!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
-
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Area End -->
+   
 
 @endsection
