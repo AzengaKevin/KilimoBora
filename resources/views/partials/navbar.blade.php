@@ -30,21 +30,38 @@
                             <li><a href="{{ route('products') }}" style="color:#fff">Our Products</a></li>
                             <li><a href="{{ route('posts.index') }}" style="color:#fff">Forum</a></li>
 
-                            <li><a href="{{ route('news.index') }}">News</a></li>
-                            <li><a href="{{ route('events.index') }}">Events</a></li>
-                            <li><a href="{{ route('contact') }}">Contact</a></li>
+                            <li><a href="{{ route('news.index') }}" style="color:#fff">News</a></li>
+                            <li><a href="{{ route('events.index') }}" style="color:#fff">Events</a></li>
+                            <li><a href="{{ route('contact') }}" style="color:#fff">Contact</a></li>
+
+                                        <!-- Nav Item - User Information -->
+                            @guest
+                            <li><a href="{{ route('login') }}" style="color:#fff">Accounts</a></li>
+                            @else
+                                <li class="dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" style="color:#fff" aria-expanded="false">
+                                     <span class="mr-2 d-none d-lg-inline text-gray-600">{{ auth()->user()->name }}</span>
+                                    </a>
+                                    <!-- Dropdown - User Information -->
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                        <a class="dropdown-item" href="{{ route('admin.dashboard') }}">
+                                            <i class="fa fa-tachometer-alt mr-3"></i>
+                                            Dashboard
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" role="button" onclick="event.preventDefault(); document.getElementById('logout').submit();" href="#">
+                                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                            Logout
+                                        </a>
+                                    </div>
+                                </li>
+                            @endguest
+  
                         </ul>
                         <!-- Search Icon -->
                         <div id="searchIcon">
                             <i class="fa fa-search text-white" aria-hidden="true"></i>
                         </div>
-                        <!-- Cart Icon -->
-{{--                        <div id="cartIcon">--}}
-{{--                            <a href="#">--}}
-{{--                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>--}}
-{{--                                <span class="cart-quantity">2</span>--}}
-{{--                            </a>--}}
-{{--                        </div>--}}
                     </div>
                     <!-- Navbar End -->
                 </div>
@@ -62,3 +79,7 @@
         </div>
     </div>
 </div>
+
+<form id="logout" action="{{ route('logout') }}" method="post">
+    @csrf
+</form>

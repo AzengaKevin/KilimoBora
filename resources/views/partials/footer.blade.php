@@ -51,33 +51,24 @@
                     <div class="footer-widget mb-80">
                         <h5 class="widget-title">RECENT NEWS</h5>
 
-                        <!-- Single Recent News Start -->
-                        <div class="single-recent-blog d-flex align-items-center">
-                            <div class="post-thumbnail">
-                                <img src="img/11.jpeg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="#" class="post-title">
-                                    KBCBO participation at Kisii ASK Show courtesy of World Vision Kenya
-                                    in 2019.
-                                </a>
-                                <div class="post-date">23 Feb 2019</div>
-                            </div>
-                        </div>
+                        @if($news->count())
+                            @foreach($news as $index => $new)
 
-                        <!-- Single Recent News Start -->
-                        <div class="single-recent-blog d-flex align-items-center">
-                            <div class="post-thumbnail">
-                                <img src="img/15.jpeg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="#" class="post-title">
-                                    KBCBO started as Kilimo Bora Public Private Partnerships group on
-                                    WhatsApp in 20/2/2017....
-                                </a>
-                                <div class="post-date">4 May 2017</div>
-                            </div>
-                        </div>
+                                <?php if($index > 2) break; ?>
+                                <!-- Single Recent News Start -->
+                                <div class="single-recent-blog d-flex align-items-center">
+                                    <div class="post-thumbnail">
+                                        <img src="{{ $new->imageUrl() }}" alt="">
+                                    </div>
+                                    <div class="post-content">
+                                        <a href="#" class="post-title">{{ $new->title }}</a>
+                                        <div class="post-date">{{ $new->created_at->diffForHumans() }}</div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @else
+                            <p class="font-weigh-bold">No news yet...</p>
+                        @endif
 
                     </div>
                 </div>

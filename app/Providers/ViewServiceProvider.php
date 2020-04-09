@@ -28,7 +28,7 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer(['pages.index', 'posts.index', 'events.index'], NewsComposer::class);
+        View::composer(['pages.index', 'posts.index', 'events.index', 'partials.footer'], NewsComposer::class);
         View::composer(['pages.index', 'posts.index', 'posts.create', 'events.index'], CategoriesComposer::class);
         View::composer(['pages.index'], EventsComposer::class);
         View::composer(['pages.index'], SlidersComposer::class);

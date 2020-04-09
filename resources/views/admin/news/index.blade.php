@@ -1,15 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.backend')
 
 @section('content')
 
-    <div class="container pt-4">
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">News</h1>
+        <a class="btn btn-primary" href="{{ route('admin.news.create') }}">Add News</a>
+    </div>
 
-        <div class="d-flex justify-content-between">
-            <h4>News</h4>
-            <a href="{{ route('admin.news.create') }}">Add News</a>
-        </div>
-
-        @if($news->count())
+    @if($news->count())
         <div class="table-responsive">
             <table class="table">
                 <thead>
@@ -49,6 +48,5 @@
     @else
         <p class="font-weight-bold">Be the firt one to tell farmers something, through this site</p>
     @endif
-    </div>
 
 @endsection

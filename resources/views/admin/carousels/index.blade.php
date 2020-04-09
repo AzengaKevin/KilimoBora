@@ -1,17 +1,16 @@
-@extends('layouts.app')
+@extends('layouts.backend')
 
 @section('page', 'Carousel Sliders')
 
+@section('title', 'Carousel Sliders')
+
 @section('content')
 
-    <div class="container pt-4">
+    <div class="d-flex justify-content-between pb-3">
+        <a class="btn btn-primary" href="{{ route('admin.carousels.create') }}">Add Slider</a>
+    </div>
 
-        <div class="d-flex justify-content-between">
-            <h4>Carousel Sliders</h4>
-            <a href="{{ route('admin.carousels.create') }}">Add Slider</a>
-        </div>
-
-        @if($carousels->count())
+    @if($carousels->count())
         <div class="table-responsive">
             <table class="table">
                 <thead>
@@ -55,6 +54,5 @@
     @else
         <p class="font-weight-bold">Better be adding some carousels</p>
     @endif
-    </div>
 
 @endsection

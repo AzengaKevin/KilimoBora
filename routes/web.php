@@ -8,7 +8,6 @@ Route::get('/contact', 'PagesController@contact')->name('contact');
 Route::get('/products', 'PagesController@products')->name('products');
 
 Route::resources([
-    'categories' => 'CategoryController',
     'posts' => 'PostController',
     'news' => 'NewsController',
 ]);
@@ -28,6 +27,11 @@ Route::name('admin.')->group(function(){
             'news' => 'Admin\NewsController',
             'carousels' => 'Admin\CarouselController',
             'events' => 'Admin\EventController',
+            'categories' => 'Admin\CategoriesController',
         ]);
+
+        Route::get('dashboard', 'Admin\DashboardController@index')->name('dashboard');
     });
 });
+
+Route::view('backend', 'layouts.backend');

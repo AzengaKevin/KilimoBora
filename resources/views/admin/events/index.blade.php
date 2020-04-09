@@ -1,15 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.backend')
 
 @section('content')
 
-    <div class="container pt-4">
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Events</h1>
+        <a class="btn btn-primary" href="{{ route('admin.events.create') }}">Add Event</a>
+    </div>
 
-        <div class="d-flex justify-content-between">
-            <h4>Events</h4>
-            <a href="{{ route('admin.events.create') }}">Add Event</a>
-        </div>
-
-        @if($events->count())
+    @if($events->count())
         <div class="table-responsive">
             <table class="table">
                 <thead>
@@ -53,6 +52,5 @@
     @else
         <p class="font-weight-bold">Post your first event to the site users</p>
     @endif
-    </div>
 
 @endsection
