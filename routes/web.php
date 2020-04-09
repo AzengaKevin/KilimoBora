@@ -12,9 +12,11 @@ Route::resources([
     'news' => 'NewsController',
 ]);
 
-//Front End Routes
 Route::get('/events', 'EventController@index')->name('events.index');
 Route::get('/events/{event}', 'EventController@show')->name('events.show');
+
+//Guest making contact
+Route::post('/contact', 'ContactController@store')->name('contact.store');
 
 //Comments routes
 Route::post('posts/{post}/comments', 'CommentController@store')->name('comments.store');
@@ -31,6 +33,10 @@ Route::name('admin.')->group(function(){
         ]);
 
         Route::get('dashboard', 'Admin\DashboardController@index')->name('dashboard');
+        
+        //Contact Routes
+        Route::get('/contacts', 'Admin\ContactsController@index')->name('contacts.index');
+        Route::delete('/contacts/{contact}', 'Admin\ContactsController@destroy')->name('contacts.destroy');
     });
 });
 

@@ -415,7 +415,8 @@
                         </div>
                         <!-- Contact Form Area -->
                         <div class="contact-form-area">
-                            <form action="index.html" method="post">
+                            <form action="{{ route('contact.store') }}" method="post">
+                                @csrf
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <input type="text" class="form-control" name="name" placeholder="Your Name">

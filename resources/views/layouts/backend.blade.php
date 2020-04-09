@@ -117,6 +117,15 @@
         </div>
       </li> 
 
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('admin.contacts.index') }}">
+          <i class="fas fa-fw fa-phone-alt"></i>
+          <span>Contacts</span></a>
+      </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
