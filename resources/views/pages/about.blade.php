@@ -233,8 +233,7 @@
                                         class="fab fa-facebook"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
                                         class="fab fa-twitter"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Email"><i
-                                        class="fab fa-envelope-square"></i></a>
+                                
                             </div>
                         </div>
                         <!-- Team Member Info -->
@@ -257,8 +256,7 @@
                                         class="fab fa-facebook"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
                                         class="fab fa-twitter"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Pinterest"><i
-                                        class="fab fa-pinterest"></i></a>
+                                
                             </div>
                         </div>
                         <!-- Team Member Info -->
@@ -281,8 +279,7 @@
                                         class="fab fa-facebook"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
                                         class="fab fa-twitter"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Pinterest"><i
-                                        class="fab fa-pinterest"></i></a>
+                                
                             </div>
                         </div>
                         <!-- Team Member Info -->
@@ -305,14 +302,98 @@
                                         class="fab fa-facebook"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
                                         class="fab fa-twitter"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Pinterest"><i
-                                        class="fab fa-pinterest"></i></a>
+                             
                             </div>
                         </div>
                         <!-- Team Member Info -->
                         <div class="team-member-info">
                             <h5>Ibrahim Nyaboke Akunga</h5>
                             <h6>leader Marketing  (Sub-Committee)</h6>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <!-- Team Thumbnail -->
+                        <div class="team-img">
+                            <img src="img/avatar.png" alt="" height="200" width="70" class="rounded-circle">
+                            <!-- Social Info -->
+                            <div class="team-social-info">
+                                <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
+                                        class="fab fa-twitter"></i></a>
+                               
+                            </div>
+                        </div>
+                        <!-- Team Member Info -->
+                        <div class="team-member-info">
+                            <h5>Zephania Ooga</h5>
+                            <h6>Treasurer</h6>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <!-- Team Thumbnail -->
+                        <div class="team-img">
+                            <img src="img/avatar.png" alt="" height="200" width="70" class="rounded-circle">
+                            <!-- Social Info -->
+                            <div class="team-social-info">
+                                <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
+                                        class="fab fa-twitter"></i></a>
+                               
+                            </div>
+                        </div>
+                        <!-- Team Member Info -->
+                        <div class="team-member-info">
+                            <h5>Jackline Nyaboko Akunga </h5>
+                            <h6>Women Leader</h6>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <!-- Team Thumbnail -->
+                        <div class="team-img">
+                            <img src="img/avatar.png" alt="" height="200" width="70" class="rounded-circle">
+                            <!-- Social Info -->
+                            <div class="team-social-info">
+                                <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
+                                        class="fab fa-twitter"></i></a>
+                                
+                            </div>
+                        </div>
+                        <!-- Team Member Info -->
+                        <div class="team-member-info">
+                            <h5>Obed Mokua</h5>
+                            <h6>Consultancy & Resource mobilization subCommittee</h6>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <!-- Team Thumbnail -->
+                        <div class="team-img">
+                            <img src="img/youthLeader.jpeg" alt="" height="200" width="70" class="rounded-circle">
+                            <!-- Social Info -->
+                            <div class="team-social-info">
+                                <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
+                                        class="fab fa-twitter"></i></a>
+                               
+                            </div>
+                        </div>
+                        <!-- Team Member Info -->
+                        <div class="team-member-info">
+                            <h5>Obed Makori</h5>
+                            <h6>Youth Leader</h6>
                         </div>
                     </div>
                 </div>
