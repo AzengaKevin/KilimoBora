@@ -102,9 +102,9 @@
 
                 <!-- Famie Video Play -->
                 <div class="col-12 col-md-4">
-                    <div class="famie mb-10">
-                        <img src="img/mission.png" alt="kilimobora_mission and core values">
-                    </div>
+                   
+                        Event and news here
+                    
                 </div>
 
             </div>

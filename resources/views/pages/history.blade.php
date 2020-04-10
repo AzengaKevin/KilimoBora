@@ -61,11 +61,9 @@
                     </div>
                 </div>
 
-                <!-- Famie Video Play -->
+                <!-- Events and news here -->
                 <div class="col-12 col-md-4">
-                    <div class="famie-video-play mb-100">
-                        <img src="img/bg-img/6.jpg" alt="">
-                    </div>
+                    Events and News here
                 </div>
 
             </div>

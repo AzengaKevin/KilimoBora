@@ -24,7 +24,7 @@
             <div class="row align-items-center">
 
                 <!-- About Us Content -->
-                <div class="col-12 col-md-8" style="box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);">
+                <div class="col-8 col-md-8" style="box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);">
                     <div class="about-us-content mb-100">
                         <!-- Section Heading -->
                         <div class="section-heading">
@@ -52,13 +52,10 @@
                     </div>
                 </div>
 
-                <!-- Famie Video Play -->
-                <div class="col-12 col-md-4">
-                    <div class="mb-100">
-                        <img src="img/mission.png" alt="">
-                    </div>
+                <!--Events and news here -->
+                <div class="col-4 col-md-4">
+                    Events and News here
                 </div>
-
             </div>
         </div>
     </section>
