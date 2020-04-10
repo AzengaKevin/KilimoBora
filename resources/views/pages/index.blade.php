@@ -36,14 +36,14 @@
             <div class="row">
                 <!-- Posts Area -->
                 <div class="col-12 col-md-8">
-                    <div class="posts-area">
+                    <div class="posts-area" >
 
                         @if($events->count())
 
                         <!-- Single Blog Post Area -->
                         <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="100ms">
                             <h6>Event Date: <a href="#" class="post-date">{{ $events->first()->when }}</a></h6>
-                            <a href="#" class="post-title">{{ $events->first()->title}}</a>
+                            <a href="{{ route('events.index') }}" class="post-title">{{ $events->first()->title}}</a>
                             <div class="row">
                                 <div class="col-7">
                                     <img src="{{ $events->first()->imageUrl() }}" alt="" class="post-thumb">
@@ -53,7 +53,7 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <a href="{{ route('events.index') }}" class="btn famie-btn mt-30">More Events...</a>
+                                    <a href="{{ route('events.index') }}" class="btn famie-btn mt-30" style="border-radius:70px">read more...</a>
                                 </div>
                             </div>
                         </div>
@@ -73,28 +73,25 @@
 
                         <!-- Single Widget Area -->
                         <div class="single-widget-area">
-
-
                             <!-- Title -->
                             <h5 class="widget-title">Social Media</h5>
 
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="icon fab fa-facebook"></a>
-                                <a href="#" class="icon fab fa-twitter"></a>
-                                <a href="#" class="icon fab fa-google"></a>
-                                <a href="#" class="icon fab fa-youtube"></a>
+                                <a href="https://facebook.com/kilimobora" class="icon fab fa-facebook"></a>
+                                <a href="https://twitter.com/kilimobora" class="icon fab fa-twitter"></a>
+                                <a href="https://google.com/kilimobora" class="icon fab fa-google"></a>
                             </div>
                         </div>
 
                         <!-- Single Widget Area -->
-                        <div class="single-widget-area">
+                        <div class="single-widget-area p-15" style="box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);">
                             <!-- Title -->
                             <h5 class="widget-title">Events</h5>
                             <!-- Cata List -->
                             @if($events->count())
-                                <ul class="cata-list">
+                                <ul class="list-group">
                                     @foreach($events as $event)
-                                        <li><a href="#">{{ $event->title }}</a></li>
+                                <li class="list-group-item"><a href="{{ route('events.index')}}">{{ $event->title }}</a></li>
                                     @endforeach
                                 </ul>
                             @else
@@ -139,44 +136,45 @@
     </section>
     <!-- Blog Area END -->
 
-    <section class="about-us-area">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <!-- About Us Content -->
-                <div class="col-12 col-md-8">
-                    <div class="about-us-content mb-100">
-                        <!-- Section Heading -->
-                        <div class="section-heading">
-                            <p>About us</p>
-                            <h2><span>Let Us</span> Tell You Our Story</h2>
-                            <img src="img/core-img/decor.png" alt="">
-                        </div>
-                        <p>
-                            Kilimo Bora Private Partnership is a community based organization with an
-                            aim of supporting each other (members) through information sharing, to
-                            increase productivity and marketing along various value chains of horticulture, poultry and
-                            dairy. The power of information sharing Through interactions on social media,
-                            and especially Osho Farmers WhatsApp based in Uganda motivated us in the formation of a community based organization ...
-                        </p>
-                        <a href="{{ route('about') }}" class="btn famie-btn mt-30">Read More</a>
-                    </div>
-                </div>
-
-                <!-- Famie Video Play -->
-                <div class="col-12 col-md-4">
-                    <div class="famie-video-play mb-100">
-                        <img src="img/bg-img/6.jpg" alt="">
-                        <!-- Play Icon -->
-                        <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-icon"><i
-                                class="fa fa-play"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
     <!-- About Us Area End -->
+      <!-- ##### About Us Area Start ##### -->
+            <section class="about-us-area">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <!-- About Us Content -->
+                        <div class="col-12 col-md-8">
+                            <div class="about-us-content mb-100">
+                                <!-- Section Heading -->
+                                <div class="section-heading">
+                                    <p>About us</p>
+                                    <h2><span>Let Us</span> Tell You Our Story</h2>
+                                    <img src="img/core-img/decor.png" alt="">
+                                </div>
+                                <p>
+                                    Kilimo Bora Private Partnership is a community based organization with an
+                                    aim of supporting each other (members) through information sharing, to
+                                    increase productivity and marketing along various value chains of horticulture, poultry and
+                                    dairy. The power of information sharing Through interactions on social media,
+                                    and especially Osho Farmers WhatsApp based in Uganda motivated us in the formation of a community based organization ...
+                                </p>
+                            <a href="{{ route('about')}}" class="btn famie-btn mt-30" style="border-radius:70px">Read More</a>
+                            </div>
+                        </div>
+
+                        <!-- Famie Video Play -->
+                        <div class="col-12 col-md-4">
+                            <div class="famie-video-play mb-100">
+                                <img src="img/logo.jpeg" alt="">
+                                <!-- Play Icon -->
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+    <!-- ##### About Us Area End ##### -->
 
     <section class="services-area d-flex flex-wrap">
         <!-- Service Thumbnail -->
@@ -267,36 +265,33 @@
         </div>
     </section>
 
-    <div class="container-fluid" style="border-style: outset; ">
+   <div class="container-fluid" style="border-style: outset; ">
         <div class="row">
             <div class="col-12" style="margin-left: 15%; margin-top: 20px;">
                 <div class="section-heading">
-                    <p>OUR</p>
                     <h2><span>Partners</span></h2>
                     <img src="img/core-img/decor.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="row">
-
-            <div class="col-lg-3 col-md-6" style=" margin-bottom: 80px;">
-                <a href="#" class="fa fa-angle-double-left"></a>
-                <img src="img/kilimoboralogo.jpg" alt="">
-
+        <div class="row" style="box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);">
+                <div class="col-lg-4 col-md-4" style=" margin-bottom: 80px;">
+                <a href="https://www.nyamira.go.ke/" target="_blank" title="Nyamira County">
+                    <img src="img/nyamira.jpeg" alt="nyamira county logo" width="100" height="100" class="rounded-circle">
+                </a>
+            
             </div>
-            <div class="col-lg-3 col-md-6" style=" margin-bottom: 80px;">
-                <img src="img/kilimoboralogo.jpg" alt="">
-
+            <div class="col-lg-4 col-md-4" style=" margin-bottom: 80px;">
+                <a href="https://www.wvi.org/kenya" target="_blank" title="World Vision Kenya">
+                    <img src="img/worldVision.jpg" alt="world vission kenya- kisii branch"  width="200" height="200" class="rounded-circle">
+                </a>
             </div>
-            <div class="col-lg-3 col-md-6" style=" margin-bottom: 80px;">
-                <img src="img/kilimoboralogo.jpg" alt="">
-
+            <div class="col-lg-4 col-md-4" style=" margin-bottom: 80px;">
+                <a href="https://ask.co.ke/kisii/" target="_blank" title="Agriculture Society of Kenya (Kisii Branch)">
+                <img src="img/ask.png" alt="Agriculture Society of Kenya-Kisii branch" class="rounded-circle">
+        
+                </a>
             </div>
-            <div class="col-lg-3 col-md-6" style=" margin-bottom: 80px;">
-                <img src="img/kilimoboralogo.jpg" alt="">
-                <a href="#" class="fa fa-angle-double-right"></a>
-            </div>
-
         </div>
     </div>
     <!-- Our Partners Area End -->

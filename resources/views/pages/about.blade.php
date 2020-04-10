@@ -2,41 +2,19 @@
 
 @section('page', 'About')
 
-{{-- @section('top-header')
-
-    <div class="top-header-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="top-header-content d-flex align-items-center justify-content-between">
-                        <!-- Top Header Content -->
-                        <div class="top-header-meta">
-                            <p>Welcome to <span>Kilimo Bora CBO</span> </p>
-                        </div>
-                        <!-- Top Header Content -->
-                        <div class="top-header-meta text-right">
-                            <a href="#" data-toggle="tooltip" data-placement="bottom"
-                               title="KilimoBora@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <span>Email: KilimoBora@gmail.com</span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+254712345678"><i
-                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +254712345678</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-@endsection --}}
-
 @section('content')
     @include('partials.banner', ['title' => 'About', 'image' => null,])
     <div class="famie-breadcrumb">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">About</li>
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="{{ route('about')}}">About</a></li>
+                    <li class="breadcrumb-item active" ><a href="{{ route('history')}}">Our History</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="{{ route('vision')}}">Vission & Mission</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="{{ route('core')}}">Core Values</a></li>
+
+
                 </ol>
             </nav>
         </div>
@@ -46,14 +24,7 @@
     <!-- ##### Famie Benefits Area Start ##### -->
     <section class="famie-benefits-area pb-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="benefits-thumbnail mb-50">
-                        <img src="img/bg-img/2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-
+        
             <div class="row justify-content-center">
                 <!-- Single Benefits Area -->
                 <div class="col-12 col-sm-4 col-lg">
@@ -120,7 +91,7 @@
                             dairy. The power of information sharing Through interactions on social media,
                             and especially Osho Farmers WhatsApp based in Uganda motivated us in the formation of a community based organization ...
                         </p>
-                        <a href="#" class="btn famie-btn mt-30">Read More</a>
+                    <a href="{{route('history')}}" class="btn famie-btn mt-30" style="border-radius: 70px">More on history</a>
                     </div>
                 </div>
 
@@ -129,8 +100,7 @@
                     <div class="famie-video-play mb-100">
                         <img src="img/bg-img/6.jpg" alt="">
                         <!-- Play Icon -->
-                        <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-icon"><i
-                                class="fa fa-play"></i></a>
+                        
                     </div>
                 </div>
 
@@ -139,7 +109,7 @@
     </section>
     <!-- ##### About Us Area End ##### -->
 
-    <!-- ##### Testimonial Area Start ##### -->
+    {{-- <!-- ##### Testimonial Area Start ##### -->
     <section class="testimonial-area bg-img bg-overlay section-padding-100 jarallax"
              style="background-image: url('img/bg-img/15.jpg');">
         <div class="container">
@@ -233,7 +203,7 @@
             </div>
         </div>
     </section>
-    <!-- ##### Testimonial Area End ##### -->
+    <!-- ##### Testimonial Area End ##### --> --}}
 
     <!-- ##### Team Member Area Start ##### -->
     <section class="team-member-area section-padding-100-0">
