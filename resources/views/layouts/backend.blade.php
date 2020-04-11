@@ -117,6 +117,35 @@
         </div>
       </li> 
 
+      <!-- Nav Item - Product Categories Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProducCategories" aria-expanded="true" aria-controls="collapseProducCategories">
+          <i class="fas fa-fw fa-list"></i>
+          <span>Product Categories</span>
+        </a>
+        <div id="collapseProducCategories" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="{{ route('admin.product_categories.index') }}">All Product Categories</a>
+            <a class="collapse-item" href="{{ route('admin.product_categories.create') }}">Add Product Category</a>
+          </div>
+        </div>
+      </li>       
+
+
+      <!-- Nav Item - Products Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProducts" aria-expanded="true" aria-controls="collapseProducts">
+          <i class="fas fa-fw fa-list"></i>
+          <span>Products</span>
+        </a>
+        <div id="collapseProducts" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="{{ route('admin.products.index') }}">All Products</a>
+            <a class="collapse-item" href="{{ route('admin.products.create') }}">Add Product</a>
+          </div>
+        </div>
+      </li>           
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 

@@ -30,6 +30,8 @@ Route::name('admin.')->group(function(){
             'carousels' => 'Admin\CarouselController',
             'events' => 'Admin\EventController',
             'categories' => 'Admin\CategoriesController',
+            'product_categories' => 'Admin\ProductCategoryController',
+            'products' => 'Admin\ProductController',
         ]);
 
         Route::get('dashboard', 'Admin\DashboardController@index')->name('dashboard');
