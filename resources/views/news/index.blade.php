@@ -44,13 +44,7 @@
                 @endif
     
               <!-- pagination -->
-              <nav>
-                <ul class="pagination wow fadeInUp" data-wow-delay="900ms">
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </nav>
+              <div>{{ $news->links() }}</div>
             </div>
     
             <!-- Sidebar Area -->
@@ -111,72 +105,38 @@
 
               </div>
     
-                <!-- Single Widget Area -->
-                <div class="single-widget-area">
-                  <!-- Title -->
-                  <h5 class="widget-title">Best products</h5>
-    
-                  <!-- Single Best Products -->
-                  <div class="single-best-product d-flex align-items-center">
-                    <!-- Product Thumbnail -->
-                    <div class="product-thumbnail">
-                      <a href="#"><img src="img/bg-img/34.jpg" alt=""></a>
-                    </div>
-                    <!-- Product Info -->
-                    <div class="product-info">
-                      <a href="#" class="pro-name">Strawberry</a>
-                      <h6>$17.99</h6>
-                      <div class="product-rating">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
+              <!-- Single Widget Area -->
+              <div class="single-widget-area">
+                <!-- Title -->
+                <h5 class="widget-title">Latest products</h5>
+  
+                @if($products->count())
+                  @foreach($products as $product)
+                    <!-- Single Best Products -->
+                    <div class="single-best-product d-flex align-items-center">
+                      <!-- Product Thumbnail -->
+                      <div class="product-thumbnail">
+                        <a href="#"><img src="{{ asset($product->imageUrl()) }}" alt="roduct Image"></a>
+                      </div>
+                      <!-- Product Info -->
+                      <div class="product-info">
+                        <a href="#" class="pro-name">{{ $product->name }}</a>
+                        <h6>KSHs {{ number_format($product->price, 2)}}</h6>
+                        <div class="product-rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
                       </div>
                     </div>
-                  </div>
-    
-                  <!-- Single Best Products -->
-                  <div class="single-best-product d-flex align-items-center">
-                    <!-- Product Thumbnail -->
-                    <div class="product-thumbnail">
-                      <a href="#"><img src="img/bg-img/35.jpg" alt=""></a>
-                    </div>
-                    <!-- Product Info -->
-                    <div class="product-info">
-                      <a href="#" class="pro-name">Pure Honey</a>
-                      <h6>$17.99</h6>
-                      <div class="product-rating">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- Single Best Products -->
-                  <div class="single-best-product d-flex align-items-center">
-                    <!-- Product Thumbnail -->
-                    <div class="product-thumbnail">
-                      <a href="#"><img src="img/bg-img/36.jpg" alt=""></a>
-                    </div>
-                    <!-- Product Info -->
-                    <div class="product-info">
-                      <a href="#" class="pro-name">Green Apple</a>
-                      <h6>$17.99</h6>
-                      <div class="product-rating">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-    
-                </div>
+                  @endforeach
+                @else
+                  <p class="font-weight-bold">No products !!!</p>
+                @endif
+
+              </div>
     
               </div>
             </div>

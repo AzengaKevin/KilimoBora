@@ -58,7 +58,7 @@
                                 <!-- Single Recent News Start -->
                                 <div class="single-recent-blog d-flex align-items-center">
                                     <div class="post-thumbnail">
-                                        <img src="{{ $new->imageUrl() }}" alt="">
+                                        <img src="{{ asset($new->imageUrl()) }}" alt="">
                                     </div>
                                     <div class="post-content">
                                         <a href="#" class="post-title">{{ $new->title }}</a>

@@ -7,7 +7,9 @@ use Illuminate\Support\ServiceProvider;
 use App\Http\View\Composers\NewsComposer;
 use App\Http\View\Composers\SlidersComposer;
 use App\Http\View\Composers\CategoriesComposer;
+use App\Http\View\Composers\ProductCategoriesComposer;
 use App\Http\View\Composers\EventsComposer;
+use App\Http\View\Composers\ProductsComposer;
 
 class ViewServiceProvider extends ServiceProvider
 {
@@ -28,9 +30,12 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
         View::composer(['pages.index', 'posts.index', 'events.index', 'partials.footer'], NewsComposer::class);
-        View::composer(['pages.index', 'posts.index', 'posts.create', 'events.index'], CategoriesComposer::class);
+        View::composer(['posts.index', 'posts.create', 'events.index'], CategoriesComposer::class);
         View::composer(['pages.index'], EventsComposer::class);
         View::composer(['pages.index'], SlidersComposer::class);
+        View::composer(['pages.index'], ProductCategoriesComposer::class);
+        View::composer(['news.index', 'posts.index'], ProductsComposer::class);
     }
 }

@@ -5,7 +5,7 @@ Auth::routes();
 Route::get('/', 'PagesController@index')->name('home');
 Route::get('/about', 'PagesController@about')->name('about');
 Route::get('/contact', 'PagesController@contact')->name('contact');
-Route::get('/products', 'PagesController@products')->name('products');
+Route::get('/product', 'PagesController@products')->name('products');
 Route::get('/history', 'PagesController@history')->name('history');
 Route::get('/vision', 'PagesController@vision')->name('vision');
 Route::get('/core', 'PagesController@core')->name('core');
@@ -15,15 +15,19 @@ Route::resources([
     'news' => 'NewsController',
 ]);
 
+//Front End Events
 Route::get('/events', 'EventController@index')->name('events.index');
 Route::get('/events/{event}', 'EventController@show')->name('events.show');
+
+//Front End Product
+Route::get('/products', 'ProductController@index')->name('products.index');
 
 //Guest making contact
 Route::post('/contact', 'ContactController@store')->name('contact.store');
 
 //Comments routes
 Route::post('posts/{post}/comments', 'CommentController@store')->name('comments.store');
-Route::view('test', 'layouts.app');
+//Route::view('test', 'layouts.app');
 
 //Elevated Users Routes
 Route::name('admin.')->group(function(){
@@ -45,4 +49,4 @@ Route::name('admin.')->group(function(){
     });
 });
 
-Route::view('backend', 'layouts.backend');
+//Route::view('backend', 'layouts.backend');

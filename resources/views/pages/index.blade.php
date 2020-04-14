@@ -36,7 +36,7 @@
             <div class="row">
                 <!-- Posts Area -->
                 <div class="col-12 col-md-8">
-                    <div class="posts-area" >
+                    <div class="posts-aSlidersComposerrea" >
 
                         @if($events->count())
 
@@ -204,61 +204,23 @@
                             Pellentesque justo metus, semper nec ullamcorper id, gravida ultricies arcu.</p>
                     </div>
 
-                    <!-- Single Service Area -->
-                    <div class="col-12 col-lg-6">
-                        <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="100ms">
-                            <!-- Service Title -->
-                            <div class="service-title mb-3 d-flex align-items-center">
-                                <img src="img/core-img/s1.png" alt="">
-                                <h5>Fruit &amp; Vegetable</h5>
-                            </div>
-                            <p>Intiam eu sagittis est, aster cosmo lacini libero. Praesent dignissim sed odio velo
-                                aliquam
-                                manta legolas. </p>
-                        </div>
-                    </div>
+                    @if($categories->count())
 
-                    <!-- Single Service Area -->
-                    <div class="col-12 col-lg-6">
-                        <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Service Title -->
-                            <div class="service-title mb-3 d-flex align-items-center">
-                                <img src="img/core-img/s2.png" alt="">
-                                <h5>Meat &amp; Eggs</h5>
+                        @foreach($categories as $category)
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-lg-6">
+                                <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+                                    <!-- Service Title -->
+                                    <div class="service-title mb-3 d-flex align-items-center">
+                                        <h5>{{ $category->name }}</h5>
+                                    </div>
+                                    <p>{{ Str::limit($category->description, 100) }}</p>
+                                </div>
                             </div>
-                            <p>Intiam eu sagittis est, aster cosmo lacini libero. Praesent dignissim sed odio velo
-                                aliquam
-                                manta legolas. </p>
-                        </div>
-                    </div>
-
-                    <!-- Single Service Area -->
-                    <div class="col-12 col-lg-6">
-                        <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
-                            <!-- Service Title -->
-                            <div class="service-title mb-3 d-flex align-items-center">
-                                <img src="img/core-img/s3.png" alt="">
-                                <h5>Milk &amp; Cheese</h5>
-                            </div>
-                            <p>Intiam eu sagittis est, aster cosmo lacini libero. Praesent dignissim sed odio velo
-                                aliquam
-                                manta legolas. </p>
-                        </div>
-                    </div>
-
-                    <!-- Single Service Area -->
-                    <div class="col-12 col-lg-6">
-                        <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="700ms">
-                            <!-- Service Title -->
-                            <div class="service-title mb-3 d-flex align-items-center">
-                                <img src="img/core-img/s4.png" alt="">
-                                <h5>Rice &amp; Corn</h5>
-                            </div>
-                            <p>Intiam eu sagittis est, aster cosmo lacini libero. Praesent dignissim sed odio velo
-                                aliquam
-                                manta legolas. </p>
-                        </div>
-                    </div>
+                        @endforeach
+                    @else
+                        <div class="col-md-12"><p class="font-weight-bold">No Product Categories Added Yet</p></div>
+                    @endif
 
                 </div>
             </div>

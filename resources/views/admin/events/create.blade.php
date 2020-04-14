@@ -86,7 +86,7 @@
         </div>
 
         <div class="clearfix my-3 mb-5">
-            <button type="submit" class="btn famie-btn float-right">Submit</button>
+            <button type="submit" class="btn btn-primary float-right">Submit</button>
         </div>
     </form>
 

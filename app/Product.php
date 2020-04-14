@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    protected $fillable = ['name', 'price'];
+    protected $fillable = ['name', 'price', 'product_category_id'];
 
 
     public function image()
@@ -16,6 +16,11 @@ class Product extends Model
 
     public function productCategory()
     {
-        return $this->belongsTo(productCategory::class);
+        return $this->belongsTo(ProductCategory::class);
     }
+
+    public function imageUrl(){
+        return is_null($this->image) ? "/img/bg-img/noimage.png" : $this->image->thumb_url;
+    }
+
 }

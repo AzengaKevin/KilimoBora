@@ -27,7 +27,7 @@
                             <li class="active"><a href="{{ route('home') }}" style="color:#fff">Home</a></li>
                             <li ><a href="{{ route('about') }}" style="color:#fff">About</a></li>
 
-                            <li><a href="{{ route('products') }}" style="color:#fff">Our Products</a></li>
+                            <li><a href="{{ route('products.index') }}" style="color:#fff">Our Products</a></li>
                             <li><a href="{{ route('posts.index') }}" style="color:#fff">Forum</a></li>
 
                             <li><a href="{{ route('news.index') }}" style="color:#fff">News</a></li>

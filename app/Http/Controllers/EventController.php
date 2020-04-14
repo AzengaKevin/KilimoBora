@@ -9,8 +9,13 @@ class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::latest()->get();
+        $events = Event::latest()->paginate(20);
 
         return view('events.index', compact('events'));
+    }
+
+    public function show(Event $event)
+    {
+        return view('events.show', compact('event'));
     }
 }
