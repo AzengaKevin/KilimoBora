@@ -239,18 +239,18 @@
         <div class="row" style="box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);">
                 <div class="col-lg-4 col-md-4" style=" margin-bottom: 80px;">
                 <a href="https://www.nyamira.go.ke/" target="_blank" title="Nyamira County">
-                    <img src="img/nyamira.jpeg" alt="nyamira county logo" width="100" height="100" class="rounded-circle">
+                    <img src="{{ asset('img/nyamira.jpeg') }}" alt="nyamira county logo" width="100" height="100" class="rounded-circle">
                 </a>
             
             </div>
             <div class="col-lg-4 col-md-4" style=" margin-bottom: 80px;">
                 <a href="https://www.wvi.org/kenya" target="_blank" title="World Vision Kenya">
-                    <img src="img/worldVision.jpg" alt="world vission kenya- kisii branch"  width="200" height="200" class="rounded-circle">
+                    <img src="{{ asset('img/worldVision.jpg') }}" alt="world vission kenya- kisii branch"  width="200" height="200" class="rounded-circle">
                 </a>
             </div>
             <div class="col-lg-4 col-md-4" style=" margin-bottom: 80px;">
                 <a href="https://ask.co.ke/kisii/" target="_blank" title="Agriculture Society of Kenya (Kisii Branch)">
-                <img src="img/ask.png" alt="Agriculture Society of Kenya-Kisii branch" class="rounded-circle">
+                <img src="{{ asset('img/ask.png') }}" alt="Agriculture Society of Kenya-Kisii branch" class="rounded-circle">
         
                 </a>
             </div>
