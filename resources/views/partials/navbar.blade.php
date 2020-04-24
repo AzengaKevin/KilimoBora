@@ -1,13 +1,13 @@
-    
+
 <div class="famie-main-menu" >
     <div class="classy-nav-container breakpoint-off"  style="box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);background-color:#1B842C">
         <div class="container">
             <!-- Menu -->
-            
+
             <nav class="classy-navbar justify-content-between" id="famieNav">
                 <!-- Nav Brand -->
                 <a href="{{ route('home') }}" class="nav-brand">
-                    <img src="/img/kilimoboralogo.jpg" alt="" height="90" width="90">
+                    <img src="/img/kilimoboralogo.png" alt="" height="90" width="90">
                 </a>
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">

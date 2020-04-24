@@ -251,7 +251,7 @@
 
             <div class="row">
                 <!-- Single Team Member -->
-            
+
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="100ms">
                         <!-- Team Thumbnail -->
