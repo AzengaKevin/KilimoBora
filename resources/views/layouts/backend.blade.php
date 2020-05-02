@@ -253,7 +253,7 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
+          @include('partials.feedback')
           <!-- Page content -->
 
           @yield('content')
@@ -323,6 +323,8 @@
   <!-- Page level custom scripts -->
   <script src="{{ asset('dashboard/js/demo/chart-area-demo.js') }}"></script>
   <script src="{{ asset('dashboard/js/demo/chart-pie-demo.js') }}"></script>
+
+  <script src="{{ asset('js/utils.js') }}"></script>
 
 </body>
 

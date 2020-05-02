@@ -8,7 +8,7 @@
                 <!-- Single Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget mb-80">
-                        <a href="#" class="foo-logo d-block mb-30"><img src="img/kilimoboralogo.png" alt="" height="200" width="200"></a>
+                        <a href="#" class="foo-logo d-block mb-30"><img src="{{ asset('img/kilimoboralogo.png')}}" alt="" height="200" width="200"></a>
                         <p>
                             Kilimo Bora Community Based Organization.
                         </p>

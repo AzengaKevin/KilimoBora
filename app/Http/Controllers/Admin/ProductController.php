@@ -57,12 +57,24 @@ class ProductController extends Controller
 
     public function edit(Product $product)
     {
-
+        return view('admin.products.edit', compact('product'));
     }
 
     public function update(Request $request, Product $product)
     {
+        $data = $request->validate([
+            'name' => ['required', 'min:3', 'max:20'],
+            'product_category_id' => ['required', 'numeric'],
+            'price' => ['required', 'numeric'],
+            'image' => ['image', 'mimes:png,jpg,jpeg,bmp'],
+        ]);
 
+        //Persist the changed data on the products table
+        $product->update($data);
+
+        $request->session()->flash('success_message', 'Product Updated successfully');
+
+        return redirect()->route('admin.products.index');
     }
 
     public function destroy(Product $product)

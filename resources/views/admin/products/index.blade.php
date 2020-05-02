@@ -4,13 +4,13 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Events</h1>
+        <h1 class="h3 mb-0 text-gray-800">Products</h1>
         <a class="btn btn-primary" href="{{ route('admin.products.create') }}">Add Product</a>
     </div>
 
     @if($products->count())
         <div class="table-responsive">
-            <table class="table">
+            <table class="table text-center">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -28,7 +28,7 @@
                             <td>{{ $product->id }}</td>
                             <td>{{ $product->name}}</td>
                             <td>{{ $product->price }}</td>
-                            <td><img src="{{ asset($product->imageUrl()) }}" width="96" alt="Event Image"></td>
+                            <td><img src="{{ asset($product->imageUrl()) }}" width="96" alt="Product Image"></td>
                             <td>{{ $product->productCategory->name }}</td>
                             <td class="d-flex">
                                 <a href="{{ route('admin.products.edit', $product) }}" class="btn btn-sm btn-info">

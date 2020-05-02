@@ -38,6 +38,26 @@ class ProductCategoryController extends Controller
 
     }
 
+
+    public function edit(ProductCategory $productCategory)
+    {
+        return view('admin.product_categories.edit', compact('productCategory'));
+    }
+
+    public function update(Request $request, ProductCategory $productCategory)
+    {
+        $data = $request->validate([
+            'name' => ['required', 'min:3', 'max:50'],
+            'description' => ['required', 'min:20', 'max:1000'],
+        ]);
+
+        $productCategory->update($data);
+
+        $request->session()->flash('success_message', 'Product category updated successfully');
+
+        return redirect()->route('admin.product_categories.index');
+    }    
+
     public function destroy(ProductCategory $productCategory)
     {
         //Delete the category from the databae
