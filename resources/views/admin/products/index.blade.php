@@ -10,7 +10,7 @@
 
     @if($products->count())
         <div class="table-responsive">
-            <table class="table">
+            <table class="table text-center">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -28,7 +28,7 @@
                             <td>{{ $product->id }}</td>
                             <td>{{ $product->name}}</td>
                             <td>{{ $product->price }}</td>
-                            <td><img src="{{ asset($product->imageUrl()) }}" width="96" alt="Event Image"></td>
+                            <td><img src="{{ asset($product->imageUrl()) }}" width="96" alt="Product Image"></td>
                             <td>{{ $product->productCategory->name }}</td>
                             <td class="d-flex">
                                 <a href="{{ route('admin.products.edit', $product) }}" class="btn btn-sm btn-info">

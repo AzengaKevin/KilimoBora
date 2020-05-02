@@ -1,26 +1,18 @@
 @extends('layouts.backend')
 
-@section('page', 'Add News')
-
-@section('custom-script')
-    <script>
-        $('#image').on('change', function () {
-            let fileName = $(this).val();
-            $(this).next('.custom-file-label').html(fileName);
-        })
-    </script>
-@endsection
+@section('page', 'Edit News ' . $news->title)
 
 @section('content')
 
-    <h1>Add News</h1>
+    <h4>Edit News</h4>
 
-    <form method="post" action="{{ route('admin.news.store') }}" enctype="multipart/form-data">
+    <form method="post" action="{{ route('admin.news.update', $news) }}" enctype="multipart/form-data">
         @csrf
+        @method('PATCH')
         <div class="form-group">
             <label for="title">Title</label>
             <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" name="title"
-                    value="{{ old('title') }}" aria-describedby="titleHelp">
+                    value="{{ old('title') ?? $news->title }}" aria-describedby="titleHelp">
             <small id="titleHelp" class="form-text text-muted">Choose a captivating title for your viewers</small>
             @error('title')
             <span class="invalid-feedback">
@@ -31,7 +23,7 @@
         <div class="form-group">
             <label for="content">Body</label>
             <textarea class="form-control @error('content') is-invalid @enderror" name="content" id="content"
-                        aria-describedby="contentHelp">{{ old('content') }}</textarea>
+                        aria-describedby="contentHelp">{{ old('content') ?? $news->content }}</textarea>
             <small id="contentHelp" class="form-text text-muted">What do you  wanna inform farmers about, type on...</small>
             @error('content')
             <span class="invalid-feedback">
@@ -46,7 +38,7 @@
                 <option value="">Choose...</option>
                 @foreach($categories as $category)
                     <option
-                        value="{{ $category->id }}" {{ old('category_id') == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
+                        value="{{ $category->id }}" {{ ((old('category_id') ?? $news->category_id) == $category->id) ? 'selected' : '' }}>{{ $category->name }}</option>
                 @endforeach
             </select>
             <small id="category_idHelp" class="form-text text-muted">Select the relevant Category for your

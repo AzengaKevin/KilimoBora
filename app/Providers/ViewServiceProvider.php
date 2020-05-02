@@ -32,10 +32,10 @@ class ViewServiceProvider extends ServiceProvider
     {
 
         View::composer(['pages.index', 'posts.index', 'events.index', 'partials.footer'], NewsComposer::class);
-        View::composer(['posts.index', 'posts.create', 'events.index'], CategoriesComposer::class);
+        View::composer(['posts.index', 'posts.create', 'events.index', 'admin.news.edit'], CategoriesComposer::class);
         View::composer(['pages.index'], EventsComposer::class);
         View::composer(['pages.index'], SlidersComposer::class);
-        View::composer(['pages.index'], ProductCategoriesComposer::class);
+        View::composer(['pages.index', 'admin.products.edit'], ProductCategoriesComposer::class);
         View::composer(['news.index', 'posts.index'], ProductsComposer::class);
     }
 }

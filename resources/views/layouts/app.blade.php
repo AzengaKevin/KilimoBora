@@ -13,8 +13,6 @@
 
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/classy-nav.css') }}">
-    <!-- This line causes font awesome conflict -->
-<!-- <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}"> -->
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -29,22 +27,17 @@
 </head>
 
 <body>
-<!-- Preloader -->
-
-<!--
-<div class="preloader d-flex align-items-center justify-content-center">
-    <div class="spinner"></div>
-</div>
-
--->
 
 <header class="header-area">
     <!-- Top Header Area -->
-@yield('top-header')
-<!-- Global Navigation -->
+    @yield('top-header')
+
+    <!-- Global Navigation -->
     @include('partials.navbar')
+
 </header>
 <main class="" style="min-height: 100vh">
+    @include('partials.feedback')
     @yield('content')
 </main>
 @include('partials.footer')

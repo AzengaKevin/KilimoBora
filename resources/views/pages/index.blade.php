@@ -253,9 +253,6 @@
             </div>
         </div>
     </div>
-    <!-- Our Partners Area End -->
-
-
 
     <section class="contact-area section-padding-100-0">
         <div class="container">
@@ -310,6 +307,6 @@
             </div>
         </div>
     </section>
-    <!-- Contact Area End -->
+    <!-- Contact Area End  -->
 
 @endsection

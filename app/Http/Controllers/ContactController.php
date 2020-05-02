@@ -18,6 +18,8 @@ class ContactController extends Controller
 
         $contact = Contact::create($data);
 
+        $request->session()->flash('success_message', 'Contact sent wait for feedback');
+
         return back();
     }
 }

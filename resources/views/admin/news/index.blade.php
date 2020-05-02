@@ -32,15 +32,12 @@
                                 <a href="{{ route('admin.news.edit', $new) }}" class="btn btn-sm btn-info">
                                     <i class="fa fa-edit"></i>
                                 </a>
-                                <form action="{{ route('admin.news.edit', $new) }}" method="post">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-sm btn-danger ml-3">
-                                        <i class="fa fa-trash-alt"></i>
-                                    </button>
-                                </form>
+                                <a role="button" href="#"  data-toggle="modal" data-target="#news{{ $new->id }}Modal" class="btn btn-danger btn-sm ml-3">
+                                    <i class="fa fa-trash-alt"></i>
+                                </a>
                             </td>
                         </tr>
+                        @include('partials.modals.delete-news', $new);
                     @endforeach
                 </tbody>
             </table>

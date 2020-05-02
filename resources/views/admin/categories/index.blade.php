@@ -29,13 +29,16 @@
                             <td>{{ $category->description }}</td>
                             <td class="d-flex">
                                 <a href="{{ route('admin.categories.show', $category) }}" class="btn btn-primary btn-sm">
-                                    <i class="fa fa-pencil-alt"></i>
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a href="{{ route('admin.categories.edit', $category) }}" class="btn btn-primary btn-sm ml-3">
+                                    <i class="fa fa-edit"></i>
                                 </a>
 
                                 <form action="{{ route('admin.categories.destroy', $category) }}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger btn-sm ml-2">
+                                    <button type="submit" class="btn btn-danger btn-sm ml-3">
                                         <i class="fa fa-trash-alt"></i>
                                     </button>
                                 </form>
