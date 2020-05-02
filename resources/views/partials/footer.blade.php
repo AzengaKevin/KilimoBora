@@ -33,7 +33,7 @@
                                 <li><a href="{{ route('about') }}">About us</a></li>
                                 <li><a href="{{ route('news.index') }}">News</a></li>
                                 <li><a href="{{ route('contact') }}">Contact us</a></li>
-                                <li><a href="{{ route('products') }}">Products</a></li>
+                                <li><a href="{{ route('products.index') }}">Products</a></li>
                                 <li><a href="#">Careers</a></li>
                                 <li><a href="#">Payments</a></li>
                                 <li><a href="#">Partners</a></li>

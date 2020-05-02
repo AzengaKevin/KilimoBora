@@ -121,14 +121,8 @@
                       <!-- Product Info -->
                       <div class="product-info">
                         <a href="#" class="pro-name">{{ $product->name }}</a>
-                        <h6>KSHs {{ number_format($product->price, 2)}}</h6>
-                        <div class="product-rating">
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
+                        {{-- <h6>KSHs {{ number_format($product->price, 2)}}</h6> --}}
+                        <span>{{ $product->description}}</span>
                       </div>
                     </div>
                   @endforeach

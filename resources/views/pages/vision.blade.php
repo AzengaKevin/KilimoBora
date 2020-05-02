@@ -54,7 +54,6 @@
 
                 <!--Events and news here -->
                 <div class="col-4 col-md-4">
-                    Events and News here
                 </div>
             </div>
         </div>

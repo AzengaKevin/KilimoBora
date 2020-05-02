@@ -17,9 +17,19 @@
             @enderror
             <small id="nameHelp" class="form-text text-muted">Product Simple Common Name</small>
         </div>
-
+         <div class="form-group">
+            <label for="description">Product Description *</label>
+            <textarea class="form-control @error('description') is-invalid @enderror" id="description" name="description"
+                    value="{{ old('description') }}" aria-describedby="descriptionHelp" rows="5" cols="10"></textarea>
+            @error('price')
+            <span class="invalid-feedback">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+            <small id="priceHelp" class="form-text text-muted">Agreed price for the prodct in question</small>
+        </div>
         <div class="form-group">
-            <label for="price">Price</label>
+            <label for="price">Price (optional)</label>
             <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price"
                     value="{{ old('price') }}" aria-describedby="priceHelp">
             @error('price')

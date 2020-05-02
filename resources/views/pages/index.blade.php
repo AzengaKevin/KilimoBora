@@ -9,13 +9,14 @@
                 <!-- Single Welcome Slides -->
                 <div class="single-welcome-slides bg-img bg-overlay jarallax"
                     style="background-image: url({{ $slider->image->url }});">
+
                     <div class="container h-100">
                         <div class="row h-100 align-items-center">
                             <div class="col-12 col-lg-10">
                                 <div class="welcome-content">
                                     <h2 data-animation="fadeInUp" data-delay="200ms">{{ $slider->title }}</h2>
                                     <p data-animation="fadeInDown" data-delay="400ms">{{ $slider->description }}</p>
-                                    <a href="{{ $slider->button_url }}" class="btn famie-btn mt-4" data-animation="bounceInUp" data-delay="600ms">{{ $slider->button_text }}</a>
+                                    <a href="{{ route('events.index') }}" class="btn famie-btn mt-4" data-animation="bounceInUp" data-delay="600ms">{{ $slider->button_text }}</a>
                                 </div>
                             </div>
                         </div>
@@ -91,11 +92,12 @@
                             @if($events->count())
                                 <ul class="list-group">
                                     @foreach($events as $event)
-                                <li class="list-group-item"><a href="{{ route('events.index')}}">{{ $event->title }}</a></li>
+                                    
+                                <li class="list-group-item"><i class="fa fa-angle-double-right"></i><a href="{{ route('events.index')}}">{{ $event->title }}</a></li>
                                     @endforeach
                                 </ul>
                             @else
-                                <p class="font-weight-bold">No evenys posted yet</p>
+                                <p class="font-weight-bold">No event posted yet: Wait for admin to post events</p>
                             @endif
                         </div>
 
@@ -196,12 +198,7 @@
 
                 <div class="row">
                     <div class="col-12 mb-50">
-                        <p>Mauris fermentum nunc quis massa lacinia consequat. Suspendisse orci magna, pharetra sedonia
-                            risus ut,
-                            elementum mollis nisin. Nunc in sapien turpis. Donec egeto david orci pulvinar ultrices
-                            necto
-                            drax turpis.
-                            Pellentesque justo metus, semper nec ullamcorper id, gravida ultricies arcu.</p>
+                        <p>Some of the products:</p>
                     </div>
 
                     @if($categories->count())
@@ -258,104 +255,7 @@
     </div>
     <!-- Our Partners Area End -->
 
-    <section class="testimonial-area bg-img bg-overlay section-padding-100 jarallax"
-             style="background-image: url('img/bg-img/15.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Testimonial Slides -->
-                    <div class="testimonial-slides owl-carousel">
 
-                        <!-- Single Slide -->
-                        <div class="single-slide">
-                            <!-- Testimonial Text -->
-                            <div class="testi-text d-flex">
-                                <div class="quote-icon">
-                                    <img src="img/core-img/quote.png" alt="">
-                                </div>
-                                <h5>"Thank you for your organic products. My children like your products and they use
-                                    for
-                                    breakfast. We are loving the pure milk, freshly fruit and of course our staple,
-                                    Brown
-                                    Rice Bread. Your Gluten Free breads truly make me feel
-                                    lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I
-                                    will
-                                    use them for many years."</h5>
-                            </div>
-                            <!-- Testimonial Thumbnail Name -->
-                            <div class="testimonial-thumbnail-name d-flex align-items-center">
-                                <div class="testimonial-thumbnail">
-                                    <img src="img/bg-img/16.jpg" alt="">
-                                </div>
-                                <div class="testimonial-name">
-                                    <h5>Mrs Lara Sullivan</h5>
-                                    <h6>Customer</h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Slide -->
-                        <div class="single-slide">
-                            <!-- Testimonial Text -->
-                            <div class="testi-text d-flex">
-                                <div class="quote-icon">
-                                    <img src="img/core-img/quote.png" alt="">
-                                </div>
-                                <h5>"Thank you for your organic products. My children like your products and they use
-                                    for
-                                    breakfast. We are loving the pure milk, freshly fruit and of course our staple,
-                                    Brown
-                                    Rice Bread. Your Gluten Free breads truly make me feel
-                                    lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I
-                                    will
-                                    use them for many years."</h5>
-                            </div>
-                            <!-- Testimonial Thumbnail Name -->
-                            <div class="testimonial-thumbnail-name d-flex align-items-center">
-                                <div class="testimonial-thumbnail">
-                                    <img src="img/bg-img/16.jpg" alt="">
-                                </div>
-                                <div class="testimonial-name">
-                                    <h5>Ajoy Das</h5>
-                                    <h6>Client</h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Slide -->
-                        <div class="single-slide">
-                            <!-- Testimonial Text -->
-                            <div class="testi-text d-flex">
-                                <div class="quote-icon">
-                                    <img src="img/core-img/quote.png" alt="">
-                                </div>
-                                <h5>"Thank you for your organic products. My children like your products and they use
-                                    for
-                                    breakfast. We are loving the pure milk, freshly fruit and of course our staple,
-                                    Brown
-                                    Rice Bread. Your Gluten Free breads truly make me feel
-                                    lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I
-                                    will
-                                    use them for many years."</h5>
-                            </div>
-                            <!-- Testimonial Thumbnail Name -->
-                            <div class="testimonial-thumbnail-name d-flex align-items-center">
-                                <div class="testimonial-thumbnail">
-                                    <img src="img/bg-img/16.jpg" alt="">
-                                </div>
-                                <div class="testimonial-name">
-                                    <h5>Akash Khan</h5>
-                                    <h6>Customer</h6>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonial Area End -->
 
     <section class="contact-area section-padding-100-0">
         <div class="container">

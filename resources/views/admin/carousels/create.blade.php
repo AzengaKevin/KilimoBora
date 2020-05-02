@@ -30,8 +30,8 @@
 
         <div class="form-group">
             <label for="description">Description</label>
-            <input type="text" class="form-control @error('description') is-invalid @enderror" id="description" name="description"
-                    value="{{ old('description') }}" aria-describedby="descriptionHelp">
+            <textarea cols="10" rows="5"class="form-control @error('description') is-invalid @enderror" id="description" name="description"
+                    value="{{ old('description') }}" aria-describedby="descriptionHelp" ></textarea>
             <small id="descriptionHelp" class="form-text text-muted">Choose a captivating description for your viewers</small>
             @error('description')
             <span class="invalid-feedback">

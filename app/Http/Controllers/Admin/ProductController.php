@@ -34,8 +34,8 @@ class ProductController extends Controller
         $data = $request->validate([
             'name' => ['required', 'min:3', 'max:20'],
             'product_category_id' => ['required', 'numeric'],
-            'price' => ['required', 'numeric'],
-            'image' => ['required', 'image', 'mimes:png,jpg,jpeg,bmp'],
+            'description' =>['required','min:3','max:1000'],
+            'image' => ['image', 'mimes:png,jpg,jpeg,bmp'],
         ]);
 
         $product = Product::create($data);

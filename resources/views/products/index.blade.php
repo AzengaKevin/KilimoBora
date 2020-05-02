@@ -85,48 +85,6 @@
             @endif
           </div>
 
-          <!-- Single Widget Area -->
-          <div class="single-widget-area">
-            <!-- Title -->
-            <h5 class="widget-title">Sort by</h5>
-            <!-- Cata List -->
-            <ul class="cata-list shop-page">
-              <li><a href="#">Top rated</a></li>
-              <li><a href="#">New arrivals</a></li>
-              <li><a href="#">Alphabetically, A-Z</a></li>
-              <li><a href="#">Alphabetically, Z-A</a></li>
-              <li><a href="#">Price: low to high</a></li>
-              <li><a href="#">Price: high to low</a></li>
-            </ul>
-          </div>
-
-          <!-- Single Widget Area -->
-          <div class="single-widget-area">
-            <!-- Title -->
-            <h5 class="widget-title">Price</h5>
-            <!-- Cata List -->
-            <ul class="cata-list shop-page">
-              <li><a href="#">$0.00 - $10.00</a></li>
-              <li><a href="#">$10.00 - $50.00</a></li>
-              <li><a href="#">$50.00 - $100.00</a></li>
-              <li><a href="#">$100.00+</a></li>
-            </ul>
-          </div>
-
-          <!-- Single Widget Area -->
-          <div class="single-widget-area">
-            <!-- Title -->
-            <h5 class="widget-title">Tags</h5>
-            <!-- Tags -->
-            <ul class="famie-tags">
-              <li><a href="#">All product</a></li>
-              <li><a href="#">Freshy Fruit</a></li>
-              <li><a href="#">Sweet Corn</a></li>
-              <li><a href="#">Chicken</a></li>
-              <li><a href="#">Organic</a></li>
-              <li><a href="#">Meat</a></li>
-            </ul>
-          </div>
 
         </div>
 
@@ -142,13 +100,12 @@
                             <!-- Product Thumbnail -->
                             <div class="product-thumbnail">
                                 <img src="{{ asset($product->imageUrl()) }}" alt="Product Image">
-                                <!-- Product Tags -->
-                                <span class="product-tags">Hot</span>
                             </div>
                             <!-- Product Description -->
                             <div class="product-desc text-center pt-4">
                             <a href="#" class="product-title">{{ $product->name }}</a>
-                            <h6 class="price">KSHs {{ number_format($product->price, 2) }}</h6>
+                            {{-- <h6 class="price">KSHs {{ number_format($product->price, 2) }}</h6> --}}
+                            <p>{{ $product->description}} </p>
                             </div>
                         </div>
                     </div>
