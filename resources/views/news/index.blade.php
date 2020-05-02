@@ -120,9 +120,9 @@
                       </div>
                       <!-- Product Info -->
                       <div class="product-info">
-                        <a href="#" class="pro-name">{{ $product->name }}</a>
+                      <a href="#" class="pro-name">{{ $product->name }}</a>
                         {{-- <h6>KSHs {{ number_format($product->price, 2)}}</h6> --}}
-                        <span>{{ $product->description}}</span>
+                        <span>{{ Str::limit($product->description,30)}}</span>
                       </div>
                     </div>
                   @endforeach

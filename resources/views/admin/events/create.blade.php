@@ -35,7 +35,7 @@
         </div>
         <div class="form-group">
             <label for="content">Content</label>
-            <textarea class="form-control @error('content') is-invalid @enderror" name="content" id="content"
+            <textarea class="form-control @error('content') is-invalid @enderror" name="content" id="content" rows="5" cols="10"
             aria-describedby="contentHelp">{{ old('content') }}</textarea>
             <small id="contentHelp" class="form-text text-muted">Say somthing cool about the event, it's benefits and what have you, state date and time</small>
             @error('content')
