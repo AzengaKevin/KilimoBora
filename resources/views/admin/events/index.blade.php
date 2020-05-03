@@ -39,7 +39,6 @@
                                 <a role="button" href="#"  data-toggle="modal" data-target="#event{{ $event->id }}Modal" class="btn btn-danger btn-sm ml-3">
                                     <i class="fa fa-trash-alt"></i>
                                 </a>
-
                             </td>
                         </tr>
 

@@ -21,7 +21,7 @@
             <label for="description">Product Description *</label>
             <textarea class="form-control @error('description') is-invalid @enderror" id="description" name="description"
                     value="{{ old('description') }}" aria-describedby="descriptionHelp" rows="5" cols="10"></textarea>
-            @error('price')
+            @error('description')
             <span class="invalid-feedback">
                 <strong>{{ $message }}</strong>
             </span>

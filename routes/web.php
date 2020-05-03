@@ -39,6 +39,7 @@ Route::name('admin.')->group(function(){
             'categories' => 'Admin\CategoriesController',
             'product_categories' => 'Admin\ProductCategoryController',
             'products' => 'Admin\ProductController',
+            'members' => 'Admin\MemberController',
         ]);
 
         Route::get('dashboard', 'Admin\DashboardController@index')->name('dashboard');

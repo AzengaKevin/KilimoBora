@@ -10,7 +10,7 @@ class EventsComposer{
 
     public function compose(View $view){
 
-        $events = Event::latest()->limit(10)->get();
+        $events = Event::latest()->limit(5)->get();
 
         return $view->with('events', $events);
     }

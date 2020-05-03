@@ -109,104 +109,8 @@
     </section>
     <!-- ##### About Us Area End ##### -->
 
-    {{-- <!-- ##### Testimonial Area Start ##### -->
-    <section class="testimonial-area bg-img bg-overlay section-padding-100 jarallax"
-             style="background-image: url('img/bg-img/15.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Testimonial Slides -->
-                    <div class="testimonial-slides owl-carousel">
-
-                        <!-- Single Slide -->
-                        <div class="single-slide">
-                            <!-- Testimonial Text -->
-                            <div class="testi-text d-flex">
-                                <div class="quote-icon">
-                                    <img src="img/core-img/quote.png" alt="">
-                                </div>
-                                <h5>
-                                    " Thank you for the your Newsletter publications. Since i subscribed for your newsletter
-                                    i have been getting rich agricultural information that has helped me improve my farm yields.
-                                    Thanks so much Kilimo Bora.
-                                    "
-                                </h5>
-                            </div>
-                            <!-- Testimonial Thumbnail Name -->
-                            <div class="testimonial-thumbnail-name d-flex align-items-center">
-                                <div class="testimonial-thumbnail">
-                                    <img src="img/bg-img/16.jpg" alt="">
-                                </div>
-                                <div class="testimonial-name">
-                                    <h5>Mrs Lara Sullivan</h5>
-                                    <h6>Newsletter subscriber</h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Slide -->
-                        <div class="single-slide">
-                            <!-- Testimonial Text -->
-                            <div class="testi-text d-flex">
-                                <div class="quote-icon">
-                                    <img src="img/core-img/quote.png" alt="">
-                                </div>
-                                <h5>
-                                   " As a member of Kilimo Bora i appreciate so much for the positive change it as brought in
-                                    our community mostly for us in Nyamira. By sharing information we have learnt from each other
-                                    and from experts the association invites to give talks to the members. Am so grateful to kilimo bora. "
-
-                                </h5>
-                            </div>
-                            <!-- Testimonial Thumbnail Name -->
-                            <div class="testimonial-thumbnail-name d-flex align-items-center">
-                                <div class="testimonial-thumbnail">
-                                    <img src="img/bg-img/16.jpg" alt="">
-                                </div>
-                                <div class="testimonial-name">
-                                    <h5>Ajoy Das</h5>
-                                    <h6>Member</h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Slide -->
-                        <div class="single-slide">
-                            <!-- Testimonial Text -->
-                            <div class="testi-text d-flex">
-                                <div class="quote-icon">
-                                    <img src="img/core-img/quote.png" alt="">
-                                </div>
-                                <h5>"Thank you for your organic products. My children like your products and they use
-                                    for
-                                    breakfast. We are loving the pure milk, freshly fruit and of course our staple,
-                                    Brown
-                                    Rice Bread. Your Gluten Free breads truly make me feel
-                                    lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I
-                                    will
-                                    use them for many years."</h5>
-                            </div>
-                            <!-- Testimonial Thumbnail Name -->
-                            <div class="testimonial-thumbnail-name d-flex align-items-center">
-                                <div class="testimonial-thumbnail">
-                                    <img src="img/bg-img/16.jpg" alt="">
-                                </div>
-                                <div class="testimonial-name">
-                                    <h5>Akash Khan</h5>
-                                    <h6>Customer</h6>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Testimonial Area End ##### --> --}}
-
     <!-- ##### Team Member Area Start ##### -->
-    <section class="team-member-area section-padding-100-0">
+    <section class="team-member-area section-padding-100-0" style="min-height: 50vh;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -221,183 +125,34 @@
 
             <div class="row">
                 <!-- Single Team Member -->
+
+                @if($members->count())
+                    @foreach($members as $member)
             
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="100ms">
-                        <!-- Team Thumbnail -->
-                        <div class="team-img">
-                            <img src="img/chairperson.jpg" alt="chairperson logo" height="100" width="100" style="border-radius: 50%">
-                            <!-- Social Info -->
-                            <div class="team-social-info">
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
-                                        class="fab fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
-                                        class="fab fa-twitter"></i></a>
-                                
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="single-team-member mb-100 wow fadeInUp pb-3" data-wow-delay="100ms">
+                            <!-- Team Thumbnail -->
+                            <div class="team-img">
+                                <img src="{{ asset($member->imageUrl()) }}" alt="chairperson logo" height="100" width="100" style="border-radius: 50%">
+                                <!-- Social Info -->
+                                <div class="team-social-info">
+                                    <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
+                                            class="fab fa-facebook"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
+                                            class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                            <!-- Team Member Info -->
+                            <div class="team-member-info">
+                                <h5>{{ $member->name }}</h5>
+                                <h6>{{ Str::limit($member->title, 20) }}</h6>
                             </div>
                         </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info">
-                            <h5>Milton Patrice Ongeri</h5>
-                            <h6>Chairperson</h6>
-                        </div>
                     </div>
-                </div>
-
-                <!-- Single Team Member -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Team Thumbnail -->
-                        <div class="team-img">
-                            <img src="img/Vchairperson.jpg" alt="" height="100" width="100" class="rounded-circle">
-                            <!-- Social Info -->
-                            <div class="team-social-info">
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
-                                        class="fab fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
-                                        class="fab fa-twitter"></i></a>
-                                
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info">
-                            <h5>Julius Ongaga Onyancha</h5>
-                            <h6>Vice Chairperson</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Team Member -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <!-- Team Thumbnail -->
-                        <div class="team-img">
-                            <img src="img/secretary.jpg" alt="" height="200" width="70" class="rounded-circle">
-                            <!-- Social Info -->
-                            <div class="team-social-info">
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
-                                        class="fab fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
-                                        class="fab fa-twitter"></i></a>
-                                
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info">
-                            <h5>Edina Kimori</h5>
-                            <h6>Secretary</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Team Member -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="700ms">
-                        <!-- Team Thumbnail -->
-                        <div class="team-img">
-                            <img src="img/marketting.jpg" alt="" height="200" width="70" class="rounded-circle">
-                            <!-- Social Info -->
-                            <div class="team-social-info">
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
-                                        class="fab fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
-                                        class="fab fa-twitter"></i></a>
-                             
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info">
-                            <h5>Ibrahim Nyaboke Akunga</h5>
-                            <h6>leader Marketing  (Sub-Committee)</h6>
-                        </div>
-                    </div>
-                </div>
-
-                  <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="700ms">
-                        <!-- Team Thumbnail -->
-                        <div class="team-img">
-                            <img src="img/avatar.png" alt="" height="200" width="70" class="rounded-circle">
-                            <!-- Social Info -->
-                            <div class="team-social-info">
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
-                                        class="fab fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
-                                        class="fab fa-twitter"></i></a>
-                               
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info">
-                            <h5>Zephania Ooga</h5>
-                            <h6>Treasurer</h6>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="700ms">
-                        <!-- Team Thumbnail -->
-                        <div class="team-img">
-                            <img src="img/avatar.png" alt="" height="200" width="70" class="rounded-circle">
-                            <!-- Social Info -->
-                            <div class="team-social-info">
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
-                                        class="fab fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
-                                        class="fab fa-twitter"></i></a>
-                               
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info">
-                            <h5>Jackline Nyaboko Akunga </h5>
-                            <h6>Women Leader</h6>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="700ms">
-                        <!-- Team Thumbnail -->
-                        <div class="team-img">
-                            <img src="img/avatar.png" alt="" height="200" width="70" class="rounded-circle">
-                            <!-- Social Info -->
-                            <div class="team-social-info">
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
-                                        class="fab fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
-                                        class="fab fa-twitter"></i></a>
-                                
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info">
-                            <h5>Obed Mokua</h5>
-                            <h6>Consultancy & Resource mobilization subCommittee</h6>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="700ms">
-                        <!-- Team Thumbnail -->
-                        <div class="team-img">
-                            <img src="img/youthLeader.jpeg" alt="" height="200" width="70" class="rounded-circle">
-                            <!-- Social Info -->
-                            <div class="team-social-info">
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i
-                                        class="fab fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i
-                                        class="fab fa-twitter"></i></a>
-                               
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info">
-                            <h5>Obed Makori</h5>
-                            <h6>Youth Leader</h6>
-                        </div>
-                    </div>
-                </div>
-
+                    @endforeach
+                @else
+                    <div class="col-md-12 text-center font-weight-bold">No members added to the site yet</div>
+                @endif
             </div>
         </div>
     </section>

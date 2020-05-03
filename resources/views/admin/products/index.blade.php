@@ -30,19 +30,16 @@
                             <td>{{ $product->price }}</td>
                             <td><img src="{{ asset($product->imageUrl()) }}" width="96" alt="Product Image"></td>
                             <td>{{ $product->productCategory->name }}</td>
-                            <td class="d-flex">
+                            <td class="d-flex justify-content-center">
                                 <a href="{{ route('admin.products.edit', $product) }}" class="btn btn-sm btn-info">
                                     <i class="fa fa-edit"></i>
                                 </a>
-                                <form action="{{ route('admin.products.edit', $product) }}" method="post">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-sm btn-danger ml-3">
-                                        <i class="fa fa-trash-alt"></i>
-                                    </button>
-                                </form>
+                                <a href="#" role="button" data-toggle="modal" data-target="#product{{ $product->id }}Modal" class="btn btn-sm btn-danger ml-3">
+                                    <i class="fa fa-trash-alt"></i>
+                                </a>
                             </td>
                         </tr>
+                        @include('partials.modals.delete-product')
                     @endforeach
                 </tbody>
             </table>

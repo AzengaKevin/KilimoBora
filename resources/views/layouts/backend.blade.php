@@ -144,7 +144,22 @@
             <a class="collapse-item" href="{{ route('admin.products.create') }}">Add Product</a>
           </div>
         </div>
-      </li>           
+      </li>       
+
+
+      <!-- Nav Item - Products Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTeam" aria-expanded="true" aria-controls="collapseTeam">
+          <i class="fas fa-fw fa-users"></i>
+          <span>Team</span>
+        </a>
+        <div id="collapseTeam" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="{{ route('admin.members.index') }}">All Members</a>
+            <a class="collapse-item" href="{{ route('admin.members.create') }}">Add Member</a>
+          </div>
+        </div>
+      </li> 
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">

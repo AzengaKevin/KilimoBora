@@ -38,15 +38,12 @@
                                 <a href="{{ route('admin.carousels.edit', $carousel) }}" class="btn btn-sm btn-info">
                                     <i class="fa fa-edit"></i>
                                 </a>
-                                <form action="{{ route('admin.carousels.edit', $carousel) }}" method="post">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-sm btn-danger ml-3">
-                                        <i class="fa fa-trash-alt"></i>
-                                    </button>
-                                </form>
+                                <a href="#" role="button" data-toggle="modal" data-target="#carousel{{ $carousel->id }}Modal" class="btn btn-sm btn-danger ml-3">
+                                    <i class="fa fa-trash-alt"></i>
+                                </a>
                             </td>
                         </tr>
+                        @include('partials.modals.delete-carousel', $carousel)
                     @endforeach
                 </tbody>
             </table>

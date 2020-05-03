@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Member;
 
 class PagesController extends Controller
 {
@@ -13,7 +14,9 @@ class PagesController extends Controller
 
     public function about()
     {
-        return view('pages.about');
+        $members = Member::latest()->get();
+
+        return view('pages.about', compact('members'));
     }
 
     public function contact()
