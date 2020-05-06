@@ -34,7 +34,7 @@
                                 <h6>Posted <a href="#" class="post-date">{{ $post->created_at->diffForHumans() }}</a> / <a href="#" class="post-author">{{ $post->user->name }}</a></h6>
                                 <a href="{{ route('posts.show', $post) }}" class="post-title">{{ $post->title }}</a>
                                 <img src="{{ asset($post->imageUrl()) }}" alt="" class="post-thumb w-100">
-                                <p class="post-excerpt">{{ Str::limit($post->body, 250) }}</p>
+                                <p class="post-excerpt">{{ Str::limit($post->body, 20) }}</p>
                             </div>
                         @endforeach
             
@@ -121,15 +121,8 @@
                       </div>
                       <!-- Product Info -->
                       <div class="product-info">
-                        <a href="#" class="pro-name">{{ $product->name }}</a>
-                        <h6>KSHs {{ number_format($product->price, 2)}}</h6>
-                        <div class="product-rating">
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
+                        <strong><a href="#" class="pro-name">{{ $product->name }}</a></strong>
+                        <p>{{ Str::limit($product->description,20) }}</p>
                       </div>
                     </div>
                   @endforeach

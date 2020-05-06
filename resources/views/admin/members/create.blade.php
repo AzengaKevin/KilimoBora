@@ -7,12 +7,13 @@
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h4 class="h3 mb-0 text-gray-800">Add Member</h4>
+        <span>Add executive members and their profile</span>
     </div>
         
     <form method="post" action="{{ route('admin.members.store') }}" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
-            <label for="name">Name</label>
+            <label for="name">Name *</label>
             <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name"
             value="{{ old('name') }}" aria-describedby="nameHelp">
             <small id="nameHelp" class="form-text text-muted">Name of the member</small>
@@ -23,7 +24,7 @@
             @enderror
         </div>
         <div class="form-group">
-            <label for="title">Title</label>
+            <label for="title">Title *</label>
             <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" name="title"
             value="{{ old('title') }}" aria-describedby="titleHelp">
             <small id="titleHelp" class="form-text text-muted">Position that the member holds</small>
@@ -35,10 +36,10 @@
         </div>
 
         <div class="form-group">
-            <label for="facebook">Facebook</label>
-            <input type="text" class="form-control @error('facebook') is-invalid @enderror" id="facebook" name="facebook"
+            <label for="facebook">Facebook (Optional)</label>
+            <input type="url" class="form-control @error('facebook') is-invalid @enderror" id="facebook" name="facebook"
             value="{{ old('facebook') }}" aria-describedby="facebookHelp">
-            <small id="facebookHelp" class="form-text text-muted">Where will the event be held, clear precise location</small>
+            <small id="facebookHelp" class="form-text text-muted">Facebook profile page</small>
             @error('facebook')
             <span class="invalid-feedback">
                 <strong>{{ $message }}</strong>
@@ -47,10 +48,10 @@
         </div>
 
         <div class="form-group">
-            <label for="twitter">Twitter</label>
-            <input type="text" class="form-control @error('twitter') is-invalid @enderror" id="twitter" name="twitter"
+            <label for="twitter">Twitter (Optional)</label>
+            <input type="url" class="form-control @error('twitter') is-invalid @enderror" id="twitter" name="twitter"
             value="{{ old('twitter') }}" aria-describedby="twitterHelp">
-            <small id="twitterHelp" class="form-text text-muted">Where will the event be held, clear precise location</small>
+            <small id="twitterHelp" class="form-text text-muted">Twitter account</small>
             @error('twitter')
             <span class="invalid-feedback">
                 <strong>{{ $message }}</strong>
@@ -61,7 +62,7 @@
         <div class="form-group mb-3">
             <div class="custom-file">
                 <input type="file" class="custom-file-input @error('image') is-invalid @enderror" aria-describedby="imageHelp" name="image" id="image">
-                <label class="custom-file-label" for="image">Select Image</label>
+                <label class="custom-file-label" for="image">Select Image *</label>
             </div>
             <div>
                 <small id="imageHelp" class="form-text text-muted">Choose an image to explain more about the news</small>

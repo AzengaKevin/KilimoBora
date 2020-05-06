@@ -30,7 +30,7 @@
         </div>
         <div class="form-group">
             <label for="content">Body</label>
-            <textarea class="form-control @error('content') is-invalid @enderror" name="content" id="content"
+            <textarea class="form-control @error('content') is-invalid @enderror" name="content" id="content" cols="10" rows="5"
                         aria-describedby="contentHelp">{{ old('content') }}</textarea>
             <small id="contentHelp" class="form-text text-muted">What do you  wanna inform farmers about, type on...</small>
             @error('content')

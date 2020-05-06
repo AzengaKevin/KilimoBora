@@ -19,7 +19,7 @@
         </div>
         <div class="form-group">
             <label for="description">Description</label>
-            <textarea class="form-control  @error('description') is-invalid @enderror" id="description"
+            <textarea class="form-control  @error('description') is-invalid @enderror" id="description" cols="10" rows="5"
                         name="description"
                         aria-describedby="descriptionHelp"
                         rows="3">{{ old('description') }}</textarea>

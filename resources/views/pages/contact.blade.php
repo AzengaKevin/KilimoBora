@@ -138,9 +138,8 @@
                 <!-- Contact Maps -->
                 <div class="col-lg-6">
                     <div class="contact-maps mb-100">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.768574361703!2d34.78213395567447!3d-0.6920330379248255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b3eb0bf137c71%3A0xd106e50ebec3c697!2sKisii%20University!5e0!3m2!1sen!2ske!4v1581578180321!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
-
+                       
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510663.7677824278!2d34.66060919205334!3d-0.6511266229837332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b16d82e769fc3%3A0x256c2064c6e24d31!2sNyamira%20County!5e0!3m2!1sen!2ske!4v1588790428855!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
                         </iframe>
                     </div>
                 </div>

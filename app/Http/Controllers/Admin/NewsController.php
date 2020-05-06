@@ -33,7 +33,7 @@ class NewsController extends Controller
     public function store(Request $request){
         $data = $request->validate([
             'title' => ['required', 'min:3', 'max:256', 'string'],
-            'content' => ['required', 'min:50'],
+            'content' => ['required', 'min:10'],
             'category_id' => ['required', 'numeric'],
             'image' => ['required', 'image', 'mimes:png,jpg,jpeg,bmp', 'max:2048']
         ]);
@@ -71,7 +71,7 @@ class NewsController extends Controller
     {
         $data = $request->validate([
             'title' => ['required', 'min:3', 'max:256', 'string'],
-            'content' => ['required', 'min:50'],
+            'content' => ['required', 'min:10'],
             'category_id' => ['required', 'numeric'],
             'image' => ['image', 'mimes:png,jpg,jpeg,bmp', 'max:2048']
         ]);

@@ -32,7 +32,7 @@ class EventController extends Controller
         //Validate the user input
         $data = $request->validate([
             'title' => ['required', 'min:3', 'max:256', 'string'],
-            'content' => ['required', 'min:100', 'string'],
+            'content' => ['required', 'min:10', 'string'],
             'when' => ['required', 'string'],
             'venue' => ['required', 'min:3', 'max:256', 'string'],
             'image' => ['required', 'image', 'mimes:png,jpg,jpeg,bmp', 'max:2048'],

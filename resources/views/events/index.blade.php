@@ -23,32 +23,41 @@
         <div class="container">
           <div class="row">
             <!-- Posts Area -->
-            <div class="col-12 col-md-8">
-
+            <section class="famie-blog-area">
+        <div class="container">
+          <div class="row">
+            <!-- Posts Area -->
+             
                 @if($events->count())
 
-                    <div class="posts-area">
-                        @foreach($events as $event)
-                            <!-- Single Blog Post Area -->
-                            <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="100ms">
-                                <h6>Event Date <a href="#" class="post-date">{{ $event->when }}</a></h6>
-                                <a href="{{ route('events.show', $event) }}" class="post-title">{{ $event->title }}</a>
-                                <img src="{{ asset($event->imageUrl()) }}" alt="" class="post-thumb w-100">
-                                <p class="post-excerpt">{{ Str::limit($event->content, 250) }}</p>
+                    @foreach($events as $event)
+                    <div class="col-lg-3 p-15">
+                        <div class="card">
+                            <div class="card-body" style="box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);">
+                                    <!-- Single Blog Post Area -->
+                                    <div class="single-blog-post-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+                                        <a href="{{ route('events.show', $event) }}" class="">
+                                            <img src="{{ asset($event->imageUrl()) }}" alt="" class="post-thumb w-100">
+                                            <strong>{{ $event->title }}</strong>
+                                            <p class="post-excerpt">{{ Str::limit($event->content,15) }}</p>
+                                        </a>
+                                            <h6>Event Date <a href="#" class="post-date">{{ $event->when }}</a></h6>
+                                    </div>
                             </div>
-                        @endforeach
-            
+                        </div>
                     </div>
+                 @endforeach
                 @else
                     <p class="font-weight-bold">No blog posts adde yet</p>
                 @endif
-    
               <!-- pagination -->
-              <div>{{ $events->links() }}</div>
-            </div>
-    
+          </div>
+  
+          </div>
+        </div>
+      </section>
             <!-- Sidebar Area -->
-            <div class="col-12 col-md-4">
+            {{-- <div class="col-12 col-md-4">
               <div class="sidebar-area">
     
                 <!-- Single Widget Area -->
@@ -106,7 +115,7 @@
               </div>
     
               </div>
-            </div>
+            </div> --}}
           </div>
         </div>
       </section>

@@ -32,8 +32,8 @@ class MemberController extends Controller
         $data = $request->validate([
             'name' => ['required', 'string', 'min:3', 'max:64'],
             'title' => ['required', 'string', 'min:3', 'max:128'],
-            'facebook' => ['required', 'url', 'max:256'],
-            'twitter' => ['required', 'url', 'max:256'],
+            'facebook' => ['max:256'],
+            'twitter' => ['max:256'],
             'image' => ['image', 'mimes:jpg,jpeg,png,bmp'],
         ]);
 
@@ -78,8 +78,8 @@ class MemberController extends Controller
         $data = $request->validate([
             'name' => ['required', 'string', 'min:3', 'max:64'],
             'title' => ['required', 'string', 'min:3', 'max:128'],
-            'facebook' => ['required', 'url', 'max:256'],
-            'twitter' => ['required', 'url', 'max:256'],
+            'facebook' => ['max:256'],
+            'twitter' => ['max:256'],
             'image' => ['image', 'mimes:jpg,jpeg,png,bmp'],
         ]);
 

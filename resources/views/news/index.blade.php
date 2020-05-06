@@ -34,7 +34,7 @@
                                 <h6>Posted <a href="#" class="post-date">{{ $new->created_at->diffForHumans() }}</a> / <a href="#" class="post-author">{{ $new->user->name }}</a></h6>
                                 <a href="{{ route('news.show', $new) }}" class="post-title">{{ $new->title }}</a>
                                 <img src="{{ asset($new->imageUrl()) }}" alt="News Image" class="post-thumb w-100">
-                                <p class="post-excerpt">{{ Str::limit($new->content, 250) }}</p>
+                                <p class="post-excerpt">{{ Str::limit($new->content, 20) }}</p>
                             </div>
                         @endforeach
             
@@ -122,7 +122,7 @@
                       <div class="product-info">
                         <a href="#" class="pro-name">{{ $product->name }}</a>
                         {{-- <h6>KSHs {{ number_format($product->price, 2)}}</h6> --}}
-                        <span>{{ $product->description}}</span>
+                        <span>{{ Str::limit($product->description,30)}}</span>
                       </div>
                     </div>
                   @endforeach
